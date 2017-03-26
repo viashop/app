@@ -1,19 +1,22 @@
 <?php
 
-
 namespace App\Repositories\OAuth;
 
 use App\Contracts\Repositories\OAuth\OAuthExistsInterface;
 use App\Contracts\Repositories\OAuth\OAuthInterface;
 use App\Events\Logs\User\EventActivityRecordUserLogged;
 use App\Events\Logs\User\EventActivityRecordUserRegistered;
-use App\Models\Role;
-use Illuminate\Database\QueryException;
 use App\Models\OAuth;
+use App\Models\Role;
 use App\Models\User;
+use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use stdClass;
 
+/**
+ * Class FacebookRepository
+ * @package App\Repositories\OAuth
+ */
 class FacebookRepository implements OAuthInterface, OAuthExistsInterface
 {
 
@@ -31,7 +34,6 @@ class FacebookRepository implements OAuthInterface, OAuthExistsInterface
      * @var Role
      */
     protected $role;
-
 
     /**
      * FacebookRepository constructor.

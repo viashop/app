@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Repositories\OAuth;
 
 use App\Contracts\Repositories\OAuth\OAuthExistsInterface;
@@ -16,6 +15,10 @@ use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
 use stdClass;
 
+/**
+ * Class GoogleRepository
+ * @package App\Repositories\OAuth
+ */
 class GoogleRepository implements OAuthInterface, OAuthExistsInterface
 {
 
