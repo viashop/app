@@ -17,7 +17,7 @@
                                     <tr>
                                         <td>
                                             <div class="flag">
-                                                <img src="/fw/light-pro/assets/img/flags/US.png"
+                                                <img src="/vendor/light-pro/assets/img/flags/US.png"
                                             </div>
                                         </td>
                                         <td>USA</td>
@@ -31,7 +31,7 @@
                                     <tr>
                                         <td>
                                             <div class="flag">
-                                                <img src="/fw/light-pro/assets/img/flags/DE.png"
+                                                <img src="/vendor/light-pro/assets/img/flags/DE.png"
                                             </div>
                                         </td>
                                         <td>Germany</td>
@@ -45,7 +45,7 @@
                                     <tr>
                                         <td>
                                             <div class="flag">
-                                                <img src="/fw/light-pro/assets/img/flags/AU.png"
+                                                <img src="/vendor/light-pro/assets/img/flags/AU.png"
                                             </div>
                                         </td>
                                         <td>Australia</td>
@@ -59,7 +59,7 @@
                                     <tr>
                                         <td>
                                             <div class="flag">
-                                                <img src="/fw/light-pro/assets/img/flags/GB.png"
+                                                <img src="/vendor/light-pro/assets/img/flags/GB.png"
                                             </div>
                                         </td>
                                         <td>United Kingdom</td>
@@ -73,7 +73,7 @@
                                     <tr>
                                         <td>
                                             <div class="flag">
-                                                <img src="/fw/light-pro/assets/img/flags/RO.png"
+                                                <img src="/vendor/light-pro/assets/img/flags/RO.png"
                                             </div>
                                         </td>
                                         <td>Romania</td>
@@ -87,7 +87,7 @@
                                     <tr>
                                         <td>
                                             <div class="flag">
-                                                <img src="/fw/light-pro/assets/img/flags/BR.png"
+                                                <img src="/vendor/light-pro/assets/img/flags/BR.png"
                                             </div>
                                         </td>
                                         <td>Brasil</td>

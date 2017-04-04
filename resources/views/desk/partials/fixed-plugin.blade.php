@@ -34,22 +34,22 @@
             <li class="header-title">Background Images</li>
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-1.jpg" data-src="/fw/material-pro/assets/img/login.jpeg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-1.jpg" data-src="/vendor/material-pro/assets/img/login.jpeg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-2.jpg" data-src="/fw/material-pro/assets/img/lock.jpeg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-2.jpg" data-src="/vendor/material-pro/assets/img/lock.jpeg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-3.jpg" data-src="/fw/material-pro/assets/img/header-doc.jpeg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-3.jpg" data-src="/vendor/material-pro/assets/img/header-doc.jpeg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-4.jpg" data-src="/fw/material-pro/assets/img/bg-pricing.jpeg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-4.jpg" data-src="/vendor/material-pro/assets/img/bg-pricing.jpeg" alt="" />
                 </a>
             </li>
             <li class="button-container">

@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Bootstrap core CSS     -->
-    <link href="/fw/material-pro/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/material-pro/assets/css/bootstrap.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
-    <link href="/fw/material-pro//assets/css/material-dashboard.css" rel="stylesheet" />
+    <link href="/vendor/material-pro//assets/css/material-dashboard.css" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="/fw/material-pro/assets/css/demo.css" rel="stylesheet" />
+    <link href="/vendor/material-pro/assets/css/demo.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />

@@ -2,7 +2,7 @@
 
 @section('main-content')
 <div class="wrapper wrapper-full-page">
-    <div class="full-page lock-page" filter-color="black" data-image="/fw/material-pro/assets/img/lock.jpg">
+    <div class="full-page lock-page" filter-color="black" data-image="/vendor/material-pro/assets/img/lock.jpg">
         <!--   you can change the color of the filter page using: data-color="blue | green | orange | red | purple" -->
         <div class="content">
             {!! Form::open(['route' => 'account.register.post', 'class' => 'form-signin']) !!}

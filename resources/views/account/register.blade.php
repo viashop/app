@@ -2,7 +2,7 @@
 
 @section('main-content')
 <div class="wrapper wrapper-full-page">
-    <div class="full-page register-page" filter-color="black" data-image="/fw/material-pro/assets/img/register.jpg">
+    <div class="full-page register-page" filter-color="black" data-image="/vendor/material-pro/assets/img/register.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">

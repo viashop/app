@@ -3,7 +3,7 @@
 @section('main-content')
 <div class="wrapper wrapper-full-page">
 
-    <div class="full-page login-page" filter-color="black" data-image="/fw/material-pro/assets/img/login.jpg">
+    <div class="full-page login-page" filter-color="black" data-image="/vendor/material-pro/assets/img/login.jpg">
         <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
         <div class="content">
             <div class="container" id="pwd-container">

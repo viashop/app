@@ -55,22 +55,22 @@
             <li class="header-title">Sidebar Images</li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/light-pro/assets/img/full-screen-image-1.jpg">
+                    <img src="/vendor/light-pro/assets/img/full-screen-image-1.jpg">
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/light-pro/assets/img/full-screen-image-2.jpg">
+                    <img src="/vendor/light-pro/assets/img/full-screen-image-2.jpg">
                 </a>
             </li>
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/light-pro/assets/img/full-screen-image-3.jpg">
+                    <img src="/vendor/light-pro/assets/img/full-screen-image-3.jpg">
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/light-pro/assets/img/full-screen-image-4.jpg">
+                    <img src="/vendor/light-pro/assets/img/full-screen-image-4.jpg">
                 </a>
             </li>
 

@@ -8,13 +8,13 @@
     <title>403 - Proibido</title>
 
     <!-- Bootstrap core CSS     -->
-    <link href="/fw/light-pro/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/light-pro/assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!--  Light Bootstrap Dashboard core CSS    -->
-    <link href="/fw/light-pro/assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="/vendor/light-pro/assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="/fw/light-pro/assets/css/demo.css" rel="stylesheet" />
+    <link href="/vendor/light-pro/assets/css/demo.css" rel="stylesheet" />
 
 
     <!--     Fonts and icons     -->
@@ -48,9 +48,9 @@
 </body>
 
 <!--   Core JS Files and PerfectScrollbar library inside jquery.ui   -->
-<script src="/fw/light-pro/js/jquery.min.js" type="text/javascript"></script>
+<script src="/vendor/light-pro/js/jquery.min.js" type="text/javascript"></script>
 
-<script src="/fw/light-pro/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/vendor/light-pro/js/bootstrap.min.js" type="text/javascript"></script>
 
 </html>
 
