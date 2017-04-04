@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="wrapper">
-    <div class="sidebar" data-active-color="rose" data-background-color="black" data-image="/fw/material-pro/assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-active-color="rose" data-background-color="black" data-image="/vendor/material-pro/assets/img/sidebar-1.jpg">
         <!--
     Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
     Tip 2: you can also add an image using data-image tag
@@ -22,7 +22,7 @@
         <div class="sidebar-wrapper">
             <div class="user">
                 <div class="photo">
-                    <img src="/fw/material-pro/assets/img/faces/avatar.jpg" />
+                    <img src="/vendor/material-pro/assets/img/faces/avatar.jpg" />
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
@@ -293,7 +293,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="flag">
-                                                            <img src="/fw/material-pro/assets/img/flags/US.png">
+                                                            <img src="/vendor/material-pro/assets/img/flags/US.png">
                                                         </div>
                                                     </td>
                                                     <td>USA</td>
@@ -307,7 +307,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="flag">
-                                                            <img src="/fw/material-pro/assets/img/flags/DE.png">
+                                                            <img src="/vendor/material-pro/assets/img/flags/DE.png">
                                                         </div>
                                                     </td>
                                                     <td>Germany</td>
@@ -321,7 +321,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="flag">
-                                                            <img src="/fw/material-pro/assets/img/flags/AU.png">
+                                                            <img src="/vendor/material-pro/assets/img/flags/AU.png">
                                                         </div>
                                                     </td>
                                                     <td>Australia</td>
@@ -335,7 +335,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="flag">
-                                                            <img src="/fw/material-pro/assets/img/flags/GB.png">
+                                                            <img src="/vendor/material-pro/assets/img/flags/GB.png">
                                                         </div>
                                                     </td>
                                                     <td>United Kingdom</td>
@@ -349,7 +349,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="flag">
-                                                            <img src="/fw/material-pro/assets/img/flags/RO.png">
+                                                            <img src="/vendor/material-pro/assets/img/flags/RO.png">
                                                         </div>
                                                     </td>
                                                     <td>Romania</td>
@@ -363,7 +363,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="flag">
-                                                            <img src="/fw/material-pro/assets/img/flags/BR.png">
+                                                            <img src="/vendor/material-pro/assets/img/flags/BR.png">
                                                         </div>
                                                     </td>
                                                     <td>Brasil</td>
@@ -544,7 +544,7 @@
                         <div class="card card-product">
                             <div class="card-image" data-header-animation="true">
                                 <a href="#pablo">
-                                    <img class="img" src="/fw/material-pro/assets/img/card-2.jpg">
+                                    <img class="img" src="/vendor/material-pro/assets/img/card-2.jpg">
                                 </a>
                             </div>
                             <div class="card-content">
@@ -583,7 +583,7 @@
                         <div class="card card-product">
                             <div class="card-image" data-header-animation="true">
                                 <a href="#pablo">
-                                    <img class="img" src="/fw/material-pro/assets/img/card-3.jpg">
+                                    <img class="img" src="/vendor/material-pro/assets/img/card-3.jpg">
                                 </a>
                             </div>
                             <div class="card-content">
@@ -622,7 +622,7 @@
                         <div class="card card-product">
                             <div class="card-image" data-header-animation="true">
                                 <a href="#pablo">
-                                    <img class="img" src="/fw/material-pro/assets/img/card-1.jpg">
+                                    <img class="img" src="/vendor/material-pro/assets/img/card-1.jpg">
                                 </a>
                             </div>
                             <div class="card-content">
@@ -752,22 +752,22 @@
             <li class="header-title">Images</li>
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-1.jpg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-1.jpg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-2.jpg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-2.jpg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-3.jpg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-3.jpg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="/fw/material-pro/assets/img/sidebar-4.jpg" alt="" />
+                    <img src="/vendor/material-pro/assets/img/sidebar-4.jpg" alt="" />
                 </a>
             </li>
             <li class="button-container">

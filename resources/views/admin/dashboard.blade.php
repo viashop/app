@@ -6,20 +6,20 @@
     <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
     <meta name="author" content="Coderthemes">
 
-    <link rel="shortcut icon" href="/fw/adminto/Admin/Horizontal/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="/vendor/adminto/Admin/Horizontal/assets/images/favicon.ico">
 
     <title>Adminto - Responsive Admin Dashboard Template</title>
 
     <!--Morris Chart CSS -->
-    <link rel="stylesheet" href="/fw/adminto/Admin/Horizontal/assets/plugins/morris/morris.css">
+    <link rel="stylesheet" href="/vendor/adminto/Admin/Horizontal/assets/plugins/morris/morris.css">
 
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/core.css" rel="stylesheet" type="text/css" />
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/components.css" rel="stylesheet" type="text/css" />
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/icons.css" rel="stylesheet" type="text/css" />
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/pages.css" rel="stylesheet" type="text/css" />
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/menu.css" rel="stylesheet" type="text/css" />
-    <link href="/fw/adminto/Admin/Horizontal/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/adminto/Admin/Horizontal/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +28,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <script src="/fw/adminto/Admin/Horizontal/assets/js/modernizr.min.js"></script>
+    <script src="/vendor/adminto/Admin/Horizontal/assets/js/modernizr.min.js"></script>
 
 
 </head>
@@ -77,7 +77,7 @@
 
                     <li class="dropdown user-box">
                         <a href="" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
-                            <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                            <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
                             <div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>
                         </a>
 
@@ -475,7 +475,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-3.jpg" class="img-responsive img-circle"
+                        <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-3.jpg" class="img-responsive img-circle"
                              alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
@@ -489,7 +489,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-2.jpg" class="img-responsive img-circle"
+                        <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-2.jpg" class="img-responsive img-circle"
                              alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600"> Michael Zenaty</h4>
@@ -503,7 +503,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-1.jpg" class="img-responsive img-circle"
+                        <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-1.jpg" class="img-responsive img-circle"
                              alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Stillnotdavid</h4>
@@ -517,7 +517,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-10.jpg" class="img-responsive img-circle"
+                        <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-10.jpg" class="img-responsive img-circle"
                              alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Tomaslau</h4>
@@ -553,7 +553,7 @@
                     <div class="inbox-widget nicescroll" style="height: 315px;">
                         <a href="#">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-1.jpg"
+                                <div class="inbox-item-img"><img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-1.jpg"
                                                                  class="img-circle" alt=""></div>
                                 <p class="inbox-item-author">Chadengle</p>
                                 <p class="inbox-item-text">Hey! there I'm available...</p>
@@ -562,7 +562,7 @@
                         </a>
                         <a href="#">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-2.jpg"
+                                <div class="inbox-item-img"><img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-2.jpg"
                                                                  class="img-circle" alt=""></div>
                                 <p class="inbox-item-author">Tomaslau</p>
                                 <p class="inbox-item-text">I've finished it! See you so...</p>
@@ -571,7 +571,7 @@
                         </a>
                         <a href="#">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-3.jpg"
+                                <div class="inbox-item-img"><img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-3.jpg"
                                                                  class="img-circle" alt=""></div>
                                 <p class="inbox-item-author">Stillnotdavid</p>
                                 <p class="inbox-item-text">This theme is awesome!</p>
@@ -580,7 +580,7 @@
                         </a>
                         <a href="#">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-4.jpg"
+                                <div class="inbox-item-img"><img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-4.jpg"
                                                                  class="img-circle" alt=""></div>
                                 <p class="inbox-item-author">Kurafire</p>
                                 <p class="inbox-item-text">Nice to meet you</p>
@@ -589,7 +589,7 @@
                         </a>
                         <a href="#">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-5.jpg"
+                                <div class="inbox-item-img"><img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-5.jpg"
                                                                  class="img-circle" alt=""></div>
                                 <p class="inbox-item-author">Shahedk</p>
                                 <p class="inbox-item-text">Hey! there I'm available...</p>
@@ -742,7 +742,7 @@
                 <li class="list-group-item">
                     <a href="#" class="user-list-item">
                         <div class="avatar">
-                            <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-2.jpg" alt="">
+                            <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-2.jpg" alt="">
                         </div>
                         <div class="user-desc">
                             <span class="name">Michael Zenaty</span>
@@ -778,7 +778,7 @@
                 <li class="list-group-item active">
                     <a href="#" class="user-list-item">
                         <div class="avatar">
-                            <img src="/fw/adminto/Admin/Horizontal/assets/images/users/avatar-3.jpg" alt="">
+                            <img src="/vendor/adminto/Admin/Horizontal/assets/images/users/avatar-3.jpg" alt="">
                         </div>
                         <div class="user-desc">
                             <span class="name">James Anderson</span>
@@ -810,34 +810,34 @@
 
 
 <!-- jQuery  -->
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.min.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/bootstrap.min.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/detect.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/fastclick.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.min.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/bootstrap.min.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/detect.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/fastclick.js"></script>
 
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.slimscroll.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.blockUI.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/waves.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/wow.min.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.nicescroll.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.scrollTo.min.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.slimscroll.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.blockUI.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/waves.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/wow.min.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.nicescroll.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.scrollTo.min.js"></script>
 
 <!-- KNOB JS -->
 <!--[if IE]>
-<script type="text/javascript" src="/fw/adminto/Admin/Horizontal/assets/plugins/jquery-knob/excanvas.js"></script>
+<script type="text/javascript" src="/vendor/adminto/Admin/Horizontal/assets/plugins/jquery-knob/excanvas.js"></script>
 <![endif]-->
-<script src="/fw/adminto/Admin/Horizontal/assets/plugins/jquery-knob/jquery.knob.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/plugins/jquery-knob/jquery.knob.js"></script>
 
 <!--Morris Chart-->
-<script src="/fw/adminto/Admin/Horizontal/assets/plugins/morris/morris.min.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/plugins/raphael/raphael-min.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/plugins/morris/morris.min.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/plugins/raphael/raphael-min.js"></script>
 
 <!-- Dashboard init -->
-<script src="/fw/adminto/Admin/Horizontal/assets/pages/jquery.dashboard.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/pages/jquery.dashboard.js"></script>
 
 <!-- App js -->
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.core.js"></script>
-<script src="/fw/adminto/Admin/Horizontal/assets/js/jquery.app.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.core.js"></script>
+<script src="/vendor/adminto/Admin/Horizontal/assets/js/jquery.app.js"></script>
 
 </body>
 </html>
