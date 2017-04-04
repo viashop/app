@@ -6,10 +6,10 @@ use App\Contracts\Repositories\OAuth\OAuthExistsInterface;
 use App\Contracts\Repositories\OAuth\OAuthInterface;
 use App\Events\Logs\User\EventActivityRecordUserLogged;
 use App\Events\Logs\User\EventActivityRecordUserRegistered;
-use Illuminate\Database\QueryException;
 use App\Models\OAuth;
 use App\Models\Role;
 use App\Models\User;
+use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
@@ -186,7 +186,7 @@ class TwitterRepository implements OAuthInterface, OAuthExistsInterface
 
             DB::commit();
 
-            throw new InvalidArgumentException( Config::get('constants.APP_IS_NOT_ASSOCIATED') );
+            throw new InvalidArgumentException(Config::get('constants.APP_IS_NOT_ASSOCIATED') );
 
         } catch (QueryException $e) {
 

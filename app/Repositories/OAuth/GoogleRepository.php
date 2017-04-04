@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Repositories\OAuth;
 
 use App\Contracts\Repositories\OAuth\OAuthExistsInterface;
@@ -16,6 +15,10 @@ use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
 use stdClass;
 
+/**
+ * Class GoogleRepository
+ * @package App\Repositories\OAuth
+ */
 class GoogleRepository implements OAuthInterface, OAuthExistsInterface
 {
 
@@ -63,7 +66,6 @@ class GoogleRepository implements OAuthInterface, OAuthExistsInterface
      */
     public function register(array $data)
     {
-
         DB::beginTransaction();
 
         try {
@@ -172,7 +174,7 @@ class GoogleRepository implements OAuthInterface, OAuthExistsInterface
 
             DB::commit();
 
-            throw new InvalidArgumentException( Config::get('constants.APP_IS_NOT_ASSOCIATED') );
+            throw new InvalidArgumentException(Config::get('constants.APP_IS_NOT_ASSOCIATED') );
 
         } catch (QueryException $e) {
 
