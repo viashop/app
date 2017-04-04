@@ -66,7 +66,6 @@ class GoogleRepository implements OAuthInterface, OAuthExistsInterface
      */
     public function register(array $data)
     {
-
         DB::beginTransaction();
 
         try {
@@ -175,7 +174,7 @@ class GoogleRepository implements OAuthInterface, OAuthExistsInterface
 
             DB::commit();
 
-            throw new InvalidArgumentException( Config::get('constants.APP_IS_NOT_ASSOCIATED') );
+            throw new InvalidArgumentException(Config::get('constants.APP_IS_NOT_ASSOCIATED') );
 
         } catch (QueryException $e) {
 
