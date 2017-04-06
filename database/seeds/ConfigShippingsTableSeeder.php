@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\ConfigShipping as s;
+use Vialoja\Models\ConfigShipping as s;
 
 class ConfigShippingsTableSeeder extends Seeder
 {

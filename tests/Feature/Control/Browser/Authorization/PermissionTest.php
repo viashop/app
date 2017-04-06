@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Control\Browser\Authorization;
 
-use App\Models\Permission;
+use Vialoja\Models\Permission;
 use Tests\TestCase;
 
 class PermissionTest extends TestCase

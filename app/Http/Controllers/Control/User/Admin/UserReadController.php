@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Control\User\Admin;
+namespace Vialoja\Http\Controllers\Control\User\Admin;
 
-use App\Authorizations\Gate\CheckGate;
-use App\Contracts\Repositories\Control\User\Search\SearchUserAdminRepositoryInterface;
-use App\Http\Controllers\Controller;
-use App\Models\User;
-use App\Repositories\Control\User\Admin\UserAdminRepository;
-use App\Repositories\Control\User\Search\SearchUserAdminRepository;
+use Vialoja\Authorizations\Gate\CheckGate;
+use Vialoja\Contracts\Repositories\Control\User\Search\SearchUserAdminRepositoryInterface;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Models\User;
+use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
+use Vialoja\Repositories\Control\User\Search\SearchUserAdminRepository;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
 
 /**
 * Class UserReadController
-* @package App\Http\Controllers\Control\User
+* @package Vialoja\Http\Controllers\Control\User
 */
 class UserReadController extends Controller
 {

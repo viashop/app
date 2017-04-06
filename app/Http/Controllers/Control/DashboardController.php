@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Control;
+namespace Vialoja\Http\Controllers\Control;
 
-use App\Http\Controllers\Controller;
-use App\Models\User;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Models\User;
 use Artesaos\SEOTools\Facades\SEOMeta;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Authorizations\Gate\CheckGate;
 
 /**
  * Class DashboardController
- * @package App\Http\Controllers\Control
+ * @package Vialoja\Http\Controllers\Control
  */
 class DashboardController extends Controller
 {

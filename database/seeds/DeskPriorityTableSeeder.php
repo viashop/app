@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\DeskPriority as s;
+use Vialoja\Models\DeskPriority as s;
 
 class DeskPriorityTableSeeder extends Seeder
 {

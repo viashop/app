@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Control\Authorization\Permission;
+namespace Vialoja\Http\Controllers\Control\Authorization\Permission;
 
-use App\Events\Logs\User\EventActivityRecordUserTypeAdded;
-use App\Events\Logs\User\EventActivityRecordUserTypeChangead;
-use App\Events\Logs\User\EventActivityRecordUserTypeRemoved;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Control\Authorization\PermissonRequest;
-use App\Models\Permission;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeRemoved;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\Authorization\PermissonRequest;
+use Vialoja\Models\Permission;
+use Vialoja\Authorizations\Gate\CheckGate;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use stdClass;
@@ -16,7 +16,7 @@ use stdClass;
 
 /**
  * Class PermissionController
- * @package App\Http\Controllers\Control\Authorization\Permission
+ * @package Vialoja\Http\Controllers\Control\Authorization\Permission
  */
 class PermissionController extends Controller
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Control\Authorization;
+namespace Vialoja\Http\Controllers\Control\Authorization;
 
-use App\Http\Controllers\Controller;
-use App\Models\Permission;
-use App\Models\Role;
-use App\Models\User;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Models\Permission;
+use Vialoja\Models\Role;
+use Vialoja\Models\User;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Authorizations\Gate\CheckGate;
 
 /**
  * Class AuthorizationPermissionRoleController
- * @package App\Http\Controllers\Control\Authorization
+ * @package Vialoja\Http\Controllers\Control\Authorization
  */
 class AuthorizationPermissionRoleController extends Controller
 {

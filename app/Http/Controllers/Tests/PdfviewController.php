@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Tests;
+namespace Vialoja\Http\Controllers\Tests;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Vialoja\Http\Controllers\Controller;
 use Barryvdh\DomPDF\Facade as PDF;
-use App\Models\User;
+use Vialoja\Models\User;
 
 class PdfviewController extends Controller
 {

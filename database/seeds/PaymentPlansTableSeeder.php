@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\PaymentPlan as s;
+use Vialoja\Models\PaymentPlan as s;
 
 class PaymentPlansTableSeeder extends Seeder
 {

@@ -3,7 +3,7 @@
 namespace Tests\Feature\Control\Browser\User;
 
 use Tests\TestCase;
-use App\Models\User;
+use Vialoja\Models\User;
 
 class UserAdminTest extends TestCase
 {

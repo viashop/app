@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Repositories\Control\User\Admin;
+namespace Vialoja\Repositories\Control\User\Admin;
 
-use App\Contracts\Repositories\Control\User\Admin\UserAdminRepositoryInterface;
-use App\Events\Emails\EventNotifyNewUserAdminRegistered;
-use App\Events\Logs\User\EventActivityRecordUserTypeAdded;
-use App\Events\Logs\User\EventActivityRecordUserTypeChangead;
-use App\Http\Requests\Control\User\UserRegisterRequest;
-use App\Http\Requests\Control\User\UserUpdateRequest;
-use App\Models\User;
+use Vialoja\Contracts\Repositories\Control\User\Admin\UserAdminRepositoryInterface;
+use Vialoja\Events\Emails\EventNotifyNewUserAdminRegistered;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
+use Vialoja\Http\Requests\Control\User\UserRegisterRequest;
+use Vialoja\Http\Requests\Control\User\UserUpdateRequest;
+use Vialoja\Models\User;
 use Exception;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -16,7 +16,7 @@ use stdClass;
 
 /**
  * Class UserAdminRepository
- * @package App\Repositories\Control\User\Admin
+ * @package Vialoja\Repositories\Control\User\Admin
  */
 class UserAdminRepository implements UserAdminRepositoryInterface
 {

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\ModelExcelProductImport as ModelExcel;
+use Vialoja\Models\ModelExcelProductImport as ModelExcel;
 
 class ModelExcelProductImportTableSeeder extends Seeder
 {

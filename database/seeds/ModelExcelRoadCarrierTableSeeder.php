@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\ModelExcelRoadCarrier as ModelExcel;
+use Vialoja\Models\ModelExcelRoadCarrier as ModelExcel;
 
 class ModelExcelRoadCarrierTableSeeder extends Seeder
 {

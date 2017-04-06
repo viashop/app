@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Contracts\Repositories\Control\User\Search;
+namespace Vialoja\Contracts\Repositories\Control\User\Search;
 
 
 interface SearchUserShopRepositoryInterface

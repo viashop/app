@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Providers;
+namespace Vialoja\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use \App\Models\User;
-use \App\Models\Permission;
+use \Vialoja\Models\User;
+use \Vialoja\Models\Permission;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -16,7 +16,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        //\App\Models\User::class => \App\Policies\Control\UserPolicy::class,
+        //\Vialoja\Models\User::class => \Vialoja\Policies\Control\UserPolicy::class,
     ];
 
     /**

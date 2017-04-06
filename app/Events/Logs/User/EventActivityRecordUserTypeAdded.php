@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events\Logs\User;
+namespace Vialoja\Events\Logs\User;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;

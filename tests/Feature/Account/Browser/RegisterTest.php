@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Account\Browser;
 
-use App\Models\User;
+use Vialoja\Models\User;
 use Tests\TestCase;
 
 class RegisterTest extends TestCase

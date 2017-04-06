@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Listeners\Emails;
+namespace Vialoja\Listeners\Emails;
 
-use App\Events\Emails\EventNotifyResetPassword;
+use Vialoja\Events\Emails\EventNotifyResetPassword;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 
 /**
  * Class SendEmailConfirmationNewPassword
- * @package App\Listeners\Emails
+ * @package Vialoja\Listeners\Emails
  */
 class SendEmailConfirmationNewPassword
 {

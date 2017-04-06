@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Listeners\Logs\User;
+namespace Vialoja\Listeners\Logs\User;
 
-use App\Events\Logs\User\EventActivityRecordUserTypeRemoved;
-use App\Models\LogActivityType;
-use App\Models\LogActivityUser;
-use App\Traits\Headers\RequestHeaders;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeRemoved;
+use Vialoja\Models\LogActivityType;
+use Vialoja\Models\LogActivityUser;
+use Vialoja\Traits\Headers\RequestHeaders;
 use Illuminate\Support\Facades\Auth;
 
 class ActivityRecordUserTypeRemoved

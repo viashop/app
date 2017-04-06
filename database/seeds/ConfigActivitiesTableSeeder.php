@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\ConfigActivities as s;
+use Vialoja\Models\ConfigActivities as s;
 
 class ConfigActivitiesTableSeeder extends Seeder
 {

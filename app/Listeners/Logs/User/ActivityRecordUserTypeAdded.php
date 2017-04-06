@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Listeners\Logs\User;
+namespace Vialoja\Listeners\Logs\User;
 
-use App\Events\Logs\User\EventActivityRecordUserTypeAdded;
-use App\Models\LogActivityType;
-use App\Models\LogActivityUser;
-use App\Traits\Headers\RequestHeaders;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
+use Vialoja\Models\LogActivityType;
+use Vialoja\Models\LogActivityUser;
+use Vialoja\Traits\Headers\RequestHeaders;
 use Illuminate\Support\Facades\Auth;
 
 /**
  * Class ActivityRecordUserTypeAdded
- * @package App\Listeners\Logs\User
+ * @package Vialoja\Listeners\Logs\User
  */
 class ActivityRecordUserTypeAdded
 {

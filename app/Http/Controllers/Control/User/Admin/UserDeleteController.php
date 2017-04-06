@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Control\User\Admin;
+namespace Vialoja\Http\Controllers\Control\User\Admin;
 
-use App\Http\Controllers\Controller;
-use App\Repositories\Control\User\Admin\UserAdminRepository;
-use App\Authorizations\Gate\CheckGate;
-use App\Models\User;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
+use Vialoja\Authorizations\Gate\CheckGate;
+use Vialoja\Models\User;
 use Exception;
 
 /**
  * Class UserDeleteController
- * @package App\Http\Controllers\Control\User
+ * @package Vialoja\Http\Controllers\Control\User
  */
 class UserDeleteController extends Controller
 {

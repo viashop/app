@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Account;
+namespace Vialoja\Http\Controllers\Account;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Vialoja\Http\Controllers\Controller;
 
 class InvitationController extends Controller
 {

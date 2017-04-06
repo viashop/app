@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Traits\Headers;
+namespace Vialoja\Traits\Headers;
 
 use Illuminate\Support\Facades\Request;
 
 /**
  * Class RequestHeaders
- * @package App\Traits\Headers
+ * @package Vialoja\Traits\Headers
  */
 trait RequestHeaders
 {

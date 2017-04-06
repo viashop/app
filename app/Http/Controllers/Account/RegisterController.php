@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Account;
+namespace Vialoja\Http\Controllers\Account;
 
-use App\Contracts\Repositories\Account\UserRepositoryInterface;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Account\RegisterRequest;
-use App\Repositories\Account\UserRepository;
-use App\Traits\Storage\StorageDataUser;
+use Vialoja\Contracts\Repositories\Account\UserRepositoryInterface;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Account\RegisterRequest;
+use Vialoja\Repositories\Account\UserRepository;
+use Vialoja\Traits\Storage\StorageDataUser;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Exception;
 use Illuminate\Support\Facades\URL;
 
 /**
  * Class RegisterController
- * @package App\Http\Controllers\Account
+ * @package Vialoja\Http\Controllers\Account
  */
 class RegisterController extends Controller
 {

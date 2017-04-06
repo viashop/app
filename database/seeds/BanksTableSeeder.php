@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Bank as s;
+use Vialoja\Models\Bank as s;
 
 class BanksTableSeeder extends Seeder
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Control\Password;
+namespace Vialoja\Http\Controllers\Control\Password;
 
-use App\Events\Emails\EventNotifyNewPasswordGenerateUser;
-use App\Events\Logs\User\EventActivityRecordUserGenerateNewPassword;
-use App\Http\Controllers\Controller;
-use App\Models\User;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Events\Emails\EventNotifyNewPasswordGenerateUser;
+use Vialoja\Events\Logs\User\EventActivityRecordUserGenerateNewPassword;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Models\User;
+use Vialoja\Authorizations\Gate\CheckGate;
 use stdClass;
 
 /**
  * Class GeneratePasswordController
- * @package App\Http\Controllers\Control\Password
+ * @package Vialoja\Http\Controllers\Control\Password
  */
 class GeneratePasswordController extends Controller
 {

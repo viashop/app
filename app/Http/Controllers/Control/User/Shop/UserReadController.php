@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Http\Controllers\Control\User\Shop;
+namespace Vialoja\Http\Controllers\Control\User\Shop;
 
 
-use App\Contracts\Repositories\Control\User\Search\SearchUserShopRepositoryInterface;
-use App\Contracts\Repositories\Control\User\Shop\UserShopRepositoryInterface;
-use App\Repositories\Control\User\Search\SearchUserShopRepository;
+use Vialoja\Contracts\Repositories\Control\User\Search\SearchUserShopRepositoryInterface;
+use Vialoja\Contracts\Repositories\Control\User\Shop\UserShopRepositoryInterface;
+use Vialoja\Repositories\Control\User\Search\SearchUserShopRepository;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Repositories\Control\User\Shop\UserShopRepository;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Repositories\Control\User\Shop\UserShopRepository;
+use Vialoja\Authorizations\Gate\CheckGate;
 
 /**
 * Class UserReadController
-* @package App\Http\Controllers\Control\User
+* @package Vialoja\Http\Controllers\Control\User
 */
 class UserReadController extends Controller
 {

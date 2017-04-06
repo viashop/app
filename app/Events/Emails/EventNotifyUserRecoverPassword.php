@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Events\Emails;
+namespace Vialoja\Events\Emails;
 
-use App\Http\Requests\Account\RecoverPasswordRequest;
-use App\Models\User;
+use Vialoja\Http\Requests\Account\RecoverPasswordRequest;
+use Vialoja\Models\User;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
@@ -11,7 +11,7 @@ use stdClass;
 
 /**
  * Class EventNotifyUserRecoverPassword
- * @package App\Events\Emails
+ * @package Vialoja\Events\Emails
  */
 class EventNotifyUserRecoverPassword
 {

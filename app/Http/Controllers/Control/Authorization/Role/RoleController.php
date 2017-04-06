@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Control\Authorization\Role;
+namespace Vialoja\Http\Controllers\Control\Authorization\Role;
 
-use App\Events\Logs\User\EventActivityRecordUserTypeAdded;
-use App\Events\Logs\User\EventActivityRecordUserTypeChangead;
-use App\Events\Logs\User\EventActivityRecordUserTypeRemoved;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Control\Authorization\RoleRequest;
-use App\Models\Role;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeRemoved;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\Authorization\RoleRequest;
+use Vialoja\Models\Role;
+use Vialoja\Authorizations\Gate\CheckGate;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use stdClass;

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Contracts\Repositories\Control\User\Shop;
+namespace Vialoja\Contracts\Repositories\Control\User\Shop;
 
 
-use App\Http\Requests\Control\User\ShopUserRequest;
+use Vialoja\Http\Requests\Control\User\ShopUserRequest;
 
 interface UserShopRepositoryInterface
 {

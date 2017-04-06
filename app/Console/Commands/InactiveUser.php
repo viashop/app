@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Vialoja\Console\Commands;
 
-use App\Models\User;
+use Vialoja\Models\User;
 use Illuminate\Console\Command;
 
 class InactiveUser extends Command

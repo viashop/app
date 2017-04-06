@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repositories\Control\User\Search;
+namespace Vialoja\Repositories\Control\User\Search;
 
-use App\Contracts\Repositories\Control\User\Search\SearchUserShopRepositoryInterface;
-use App\Models\User;
+use Vialoja\Contracts\Repositories\Control\User\Search\SearchUserShopRepositoryInterface;
+use Vialoja\Models\User;
 
 class SearchUserShopRepository implements SearchUserShopRepositoryInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Account;
+namespace Vialoja\Http\Controllers\Account;
 
-use App\Contracts\Repositories\Account\RecoverPasswordRepositoryInterface;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Account\ResetPasswordRequest;
-use App\Repositories\Account\RecoverPasswordRepository;
+use Vialoja\Contracts\Repositories\Account\RecoverPasswordRepositoryInterface;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Account\ResetPasswordRequest;
+use Vialoja\Repositories\Account\RecoverPasswordRepository;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Exception;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Config;
 
 /**
  * Class ResetPasswordController
- * @package App\Http\Controllers\Account
+ * @package Vialoja\Http\Controllers\Account
  */
 class ResetPasswordController extends Controller
 {

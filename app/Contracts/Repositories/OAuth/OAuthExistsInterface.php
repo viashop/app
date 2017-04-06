@@ -1,12 +1,12 @@
 <?php
 
 
-namespace App\Contracts\Repositories\OAuth;
+namespace Vialoja\Contracts\Repositories\OAuth;
 
 
 /**
  * Interface OAuthExistsInterface
- * @package App\Repositories\OAuth
+ * @package Vialoja\Repositories\OAuth
  */
 interface OAuthExistsInterface
 {

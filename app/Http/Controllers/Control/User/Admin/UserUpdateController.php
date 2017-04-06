@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Control\User\Admin;
+namespace Vialoja\Http\Controllers\Control\User\Admin;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Control\User\UserUpdateRequest;
-use App\Models\Role;
-use App\Models\User;
-use App\Repositories\Control\User\Admin\UserAdminRepository;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\User\UserUpdateRequest;
+use Vialoja\Models\Role;
+use Vialoja\Models\User;
+use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
 use Artesaos\SEOTools\Facades\SEOMeta;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Authorizations\Gate\CheckGate;
 
 /**
  * Class UserUpdateController
- * @package App\Http\Controllers\Control\User\Admin
+ * @package Vialoja\Http\Controllers\Control\User\Admin
  */
 class UserUpdateController extends Controller
 {

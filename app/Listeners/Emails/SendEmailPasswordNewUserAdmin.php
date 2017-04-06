@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Listeners\Emails;
+namespace Vialoja\Listeners\Emails;
 
-use App\Events\Emails\EventNotifyNewUserAdminRegistered;
+use Vialoja\Events\Emails\EventNotifyNewUserAdminRegistered;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 
 /**
  * Class SendEmailPasswordNewUserAdmin
- * @package App\Listeners\Emails
+ * @package Vialoja\Listeners\Emails
  */
 class SendEmailPasswordNewUserAdmin
 {

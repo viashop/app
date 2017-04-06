@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Contracts\Repositories\Account;
+namespace Vialoja\Contracts\Repositories\Account;
 
 
-use App\Http\Requests\Account\LoginRequest;
-use App\Http\Requests\Account\RegisterRequest;
+use Vialoja\Http\Requests\Account\LoginRequest;
+use Vialoja\Http\Requests\Account\RegisterRequest;
 
 interface UserRepositoryInterface
 {

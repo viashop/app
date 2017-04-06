@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Repositories\Account;
+namespace Vialoja\Repositories\Account;
 
-use App\Contracts\Repositories\Account\UserRepositoryInterface;
-use App\Events\Emails\EventNotifyNewUserRegistered;
-use App\Events\Logs\User\EventActivityRecordUserLogged;
-use App\Events\Logs\User\EventActivityRecordUserLoginInvalid;
-use App\Events\Logs\User\EventActivityRecordUserLoginPasswordInvalid;
-use App\Events\Logs\User\EventActivityRecordUserRegistered;
-use App\Http\Requests\Account\LoginRequest;
-use App\Http\Requests\Account\RegisterRequest;
-use App\Models\Role;
-use App\Models\User;
-use App\Traits\Filters\ValidatePassword;
+use Vialoja\Contracts\Repositories\Account\UserRepositoryInterface;
+use Vialoja\Events\Emails\EventNotifyNewUserRegistered;
+use Vialoja\Events\Logs\User\EventActivityRecordUserLogged;
+use Vialoja\Events\Logs\User\EventActivityRecordUserLoginInvalid;
+use Vialoja\Events\Logs\User\EventActivityRecordUserLoginPasswordInvalid;
+use Vialoja\Events\Logs\User\EventActivityRecordUserRegistered;
+use Vialoja\Http\Requests\Account\LoginRequest;
+use Vialoja\Http\Requests\Account\RegisterRequest;
+use Vialoja\Models\Role;
+use Vialoja\Models\User;
+use Vialoja\Traits\Filters\ValidatePassword;
 use Exception;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Hash;
@@ -20,7 +20,7 @@ use stdClass;
 
 /**
  * Class UserRepository
- * @package App\Repositories\Account
+ * @package Vialoja\Repositories\Account
  */
 class UserRepository implements UserRepositoryInterface
 {

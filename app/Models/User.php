@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Vialoja\Models;
 
 use Gate;
 use Illuminate\Database\Eloquent\SoftDeletes;

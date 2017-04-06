@@ -3,8 +3,8 @@
 namespace Tests\Feature\Control\Browser\Authorization;
 
 use Tests\TestCase;
-use App\Models\Role;
-use App\Models\Permission;
+use Vialoja\Models\Role;
+use Vialoja\Models\Permission;
 
 class AuthorizationPermissionRoleTest extends TestCase
 {

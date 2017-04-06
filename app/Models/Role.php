@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Vialoja\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -25,7 +25,7 @@ class Role extends Model
     public function permissions()
     {
         //retorno todos os papeis que o usuario desempenha no sistema.
-        return $this->belongsToMany(\App\Models\Permission::class);
+        return $this->belongsToMany(\Vialoja\Models\Permission::class);
     }
 
 }

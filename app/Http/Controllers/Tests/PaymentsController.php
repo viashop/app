@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Tests;
+namespace Vialoja\Http\Controllers\Tests;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Models\User;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Models\User;
 use Excel;
 
 class PaymentsController extends Controller

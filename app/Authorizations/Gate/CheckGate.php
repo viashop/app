@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Authorizations\Gate;
+namespace Vialoja\Authorizations\Gate;
 
 use Illuminate\Support\Facades\Gate;
 
 /**
  * Class CheckGate
- * @package App\Authorizations\Gate
+ * @package Vialoja\Authorizations\Gate
  */
 trait CheckGate
 {

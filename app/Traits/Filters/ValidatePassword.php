@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits\Filters;
+namespace Vialoja\Traits\Filters;
 
 
 use Illuminate\Support\Facades\Config;
@@ -8,7 +8,7 @@ use Respect\Validation\Validator as v;
 
 /**
  * Class ValidatePassword
- * @package App\Traits\Filters
+ * @package Vialoja\Traits\Filters
  */
 trait ValidatePassword
 {

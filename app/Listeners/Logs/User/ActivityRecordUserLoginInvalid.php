@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Listeners\Logs\User;
+namespace Vialoja\Listeners\Logs\User;
 
-use App\Events\Logs\User\EventActivityRecordUserLoginInvalid;
-use App\Models\LogActivityGlobal;
-use App\Models\LogActivityType;
-use App\Traits\Headers\RequestHeaders;
+use Vialoja\Events\Logs\User\EventActivityRecordUserLoginInvalid;
+use Vialoja\Models\LogActivityGlobal;
+use Vialoja\Models\LogActivityType;
+use Vialoja\Traits\Headers\RequestHeaders;
 use Illuminate\Support\Facades\Request;
 
 /**
  * Class ActivityRecordUserLoginInvalid
- * @package App\Listeners\Logs\User
+ * @package Vialoja\Listeners\Logs\User
  */
 class ActivityRecordUserLoginInvalid
 {

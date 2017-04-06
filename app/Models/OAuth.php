@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Models;
+namespace Vialoja\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class OAuth
- * @package App\Models
+ * @package Vialoja\Models
  */
 class OAuth extends Model
 {

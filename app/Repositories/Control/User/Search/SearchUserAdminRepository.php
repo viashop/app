@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Repositories\Control\User\Search;
+namespace Vialoja\Repositories\Control\User\Search;
 
-use App\Contracts\Repositories\Control\User\Search\SearchUserAdminRepositoryInterface;
-use App\Models\User;
+use Vialoja\Contracts\Repositories\Control\User\Search\SearchUserAdminRepositoryInterface;
+use Vialoja\Models\User;
 
 /**
  * Class SearchUserAdminRepository
- * @package App\Repositories\Control\User\Admin
+ * @package Vialoja\Repositories\Control\User\Admin
  */
 class SearchUserAdminRepository implements SearchUserAdminRepositoryInterface
 {

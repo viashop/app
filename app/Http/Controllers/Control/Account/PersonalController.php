@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Control\Account;
+namespace Vialoja\Http\Controllers\Control\Account;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Control\Personal\PersonalRequest;
-use App\Repositories\Control\User\Admin\UserAdminRepository;
-use App\Traits\Filters\ValidatePassword;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\Personal\PersonalRequest;
+use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
+use Vialoja\Traits\Filters\ValidatePassword;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Support\Facades\Auth;
 use Respect\Validation\Validator as v;
-use App\Models\Role;
-use App\Models\User;
+use Vialoja\Models\Role;
+use Vialoja\Models\User;
 
 class PersonalController extends Controller
 {

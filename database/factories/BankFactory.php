@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Bank;
+use Vialoja\Models\Bank;
 
 $factory->define(Bank::class, function (Faker\Generator $faker) {
     return [

@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Vialoja\Providers\AppServiceProvider::class,
+        Vialoja\Providers\AuthServiceProvider::class,
+        // Vialoja\Providers\BroadcastServiceProvider::class,
+        Vialoja\Providers\EventServiceProvider::class,
+        Vialoja\Providers\RouteServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         Artdarek\OAuth\OAuthServiceProvider::class,

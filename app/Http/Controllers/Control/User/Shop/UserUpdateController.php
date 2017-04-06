@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Control\User\Shop;
+namespace Vialoja\Http\Controllers\Control\User\Shop;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Control\User\ShopUserRequest;
-use App\Repositories\Control\User\Shop\UserShopRepository;
-use App\Models\Role;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\User\ShopUserRequest;
+use Vialoja\Repositories\Control\User\Shop\UserShopRepository;
+use Vialoja\Models\Role;
 use Artesaos\SEOTools\Facades\SEOMeta;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Authorizations\Gate\CheckGate;
 
 /**
  * Class UserUpdateController
- * @package App\Http\Controllers\Control\User\Shop
+ * @package Vialoja\Http\Controllers\Control\User\Shop
  */
 class UserUpdateController extends Controller
 {

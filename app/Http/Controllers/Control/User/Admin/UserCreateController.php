@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Control\User\Admin;
+namespace Vialoja\Http\Controllers\Control\User\Admin;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Control\User\UserRegisterRequest;
-use App\Repositories\Control\User\Admin\UserAdminRepository;
-use App\Models\Role;
-use App\Authorizations\Gate\CheckGate;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\User\UserRegisterRequest;
+use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
+use Vialoja\Models\Role;
+use Vialoja\Authorizations\Gate\CheckGate;
 use Artesaos\SEOTools\Facades\SEOMeta;
 
 /**
  * Class UserCreateController
- * @package App\Http\Controllers\Control\User\Admin
+ * @package Vialoja\Http\Controllers\Control\User\Admin
  */
 class UserCreateController extends Controller
 {

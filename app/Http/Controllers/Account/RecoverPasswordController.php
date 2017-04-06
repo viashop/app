@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Account;
+namespace Vialoja\Http\Controllers\Account;
 
-use App\Contracts\Repositories\Account\RecoverPasswordRepositoryInterface;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Account\RecoverPasswordRequest;
-use App\Repositories\Account\RecoverPasswordRepository;
-use App\Repositories\Account\UserRepository;
+use Vialoja\Contracts\Repositories\Account\RecoverPasswordRepositoryInterface;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Account\RecoverPasswordRequest;
+use Vialoja\Repositories\Account\RecoverPasswordRepository;
+use Vialoja\Repositories\Account\UserRepository;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Exception;
 use Illuminate\Support\Facades\URL;
 
 /**
  * Class RecoverPasswordController
- * @package App\Http\Controllers\Account
+ * @package Vialoja\Http\Controllers\Account
  */
 class RecoverPasswordController extends Controller
 {

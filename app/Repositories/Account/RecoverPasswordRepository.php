@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Repositories\Account;
+namespace Vialoja\Repositories\Account;
 
-use App\Contracts\Repositories\Account\RecoverPasswordRepositoryInterface;
-use App\Events\Emails\EventNotifyResetPassword;
-use App\Events\Emails\EventNotifyUserRecoverPassword;
-use App\Events\Logs\User\EventActivityRecordUserRecoverPassword;
-use App\Events\Logs\User\EventActivityRecordUserResetPassword;
-use App\Http\Requests\Account\RecoverPasswordRequest;
-use App\Http\Requests\Account\ResetPasswordRequest;
-use App\Models\User;
-use App\Models\UserRecoverPassword;
-use App\Traits\Filters\ValidatePassword;
+use Vialoja\Contracts\Repositories\Account\RecoverPasswordRepositoryInterface;
+use Vialoja\Events\Emails\EventNotifyResetPassword;
+use Vialoja\Events\Emails\EventNotifyUserRecoverPassword;
+use Vialoja\Events\Logs\User\EventActivityRecordUserRecoverPassword;
+use Vialoja\Events\Logs\User\EventActivityRecordUserResetPassword;
+use Vialoja\Http\Requests\Account\RecoverPasswordRequest;
+use Vialoja\Http\Requests\Account\ResetPasswordRequest;
+use Vialoja\Models\User;
+use Vialoja\Models\UserRecoverPassword;
+use Vialoja\Traits\Filters\ValidatePassword;
 use DateInterval;
 use DateTime;
 use Illuminate\Http\Request;
@@ -20,7 +20,7 @@ use stdClass;
 
 /**
  * Class RecoverPasswordRepository
- * @package App\Repositories\Account
+ * @package Vialoja\Repositories\Account
  */
 class RecoverPasswordRepository implements RecoverPasswordRepositoryInterface
 {

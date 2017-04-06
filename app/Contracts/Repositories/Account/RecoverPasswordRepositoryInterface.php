@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Contracts\Repositories\Account;
+namespace Vialoja\Contracts\Repositories\Account;
 
 
-use App\Http\Requests\Account\RecoverPasswordRequest;
-use App\Http\Requests\Account\ResetPasswordRequest;
+use Vialoja\Http\Requests\Account\RecoverPasswordRequest;
+use Vialoja\Http\Requests\Account\ResetPasswordRequest;
 use Illuminate\Http\Request;
 
 interface RecoverPasswordRepositoryInterface

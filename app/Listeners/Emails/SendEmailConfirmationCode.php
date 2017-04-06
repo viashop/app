@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Listeners\Emails;
+namespace Vialoja\Listeners\Emails;
 
-use App\Events\Emails\EventNotifyNewUserRegistered;
+use Vialoja\Events\Emails\EventNotifyNewUserRegistered;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 
 
 /**
  * Class SendEmailConfirmationCode
- * @package App\Listeners\Emails
+ * @package Vialoja\Listeners\Emails
  */
 class SendEmailConfirmationCode
 {

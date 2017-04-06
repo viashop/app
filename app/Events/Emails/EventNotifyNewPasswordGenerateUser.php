@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events\Emails;
+namespace Vialoja\Events\Emails;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
@@ -9,7 +9,7 @@ use stdClass;
 
 /**
  * Class EventNotifyNewPasswordGenerateUser
- * @package App\Events\Emails
+ * @package Vialoja\Events\Emails
  */
 class EventNotifyNewPasswordGenerateUser
 {

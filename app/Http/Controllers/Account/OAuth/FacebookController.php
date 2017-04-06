@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Account\OAuth;
+namespace Vialoja\Http\Controllers\Account\OAuth;
 
-use App\Contracts\Repositories\OAuth\OAuthInterface;
-use App\Http\Controllers\Controller;
-use App\Repositories\OAuth\FacebookRepository;
-use App\Traits\Storage\StorageDataUser;
+use Vialoja\Contracts\Repositories\OAuth\OAuthInterface;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Repositories\OAuth\FacebookRepository;
+use Vialoja\Traits\Storage\StorageDataUser;
 use Artdarek\OAuth\OAuth;
 use Exception;
 use InvalidArgumentException;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Config;
 
 /**
  * Class FacebookController
- * @package App\Http\Controllers\Account\OAuth
+ * @package Vialoja\Http\Controllers\Account\OAuth
  */
 class FacebookController extends Controller
 {

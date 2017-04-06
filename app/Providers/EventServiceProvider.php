@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Vialoja\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -18,67 +18,67 @@ class EventServiceProvider extends ServiceProvider
         //+++++++++++++++++++++++++++++++++++++
         //---------- Logs in Database ---------
         //+++++++++++++++++++++++++++++++++++++
-        'App\Events\Logs\User\EventActivityRecordUserLoginInvalid' => [
-            'App\Listeners\Logs\User\ActivityRecordUserLoginInvalid',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserLoginInvalid' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserLoginInvalid',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserLoginPasswordInvalid' => [
-            'App\Listeners\Logs\User\ActivityRecordLoginPasswordInvalid',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserLoginPasswordInvalid' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordLoginPasswordInvalid',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserLogged' => [
-            'App\Listeners\Logs\User\ActivityRecordUserLogged',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserLogged' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserLogged',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserRegistered' => [
-            'App\Listeners\Logs\User\ActivityRecordUserRegistered',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserRegistered' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserRegistered',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserResetPassword' => [
-            'App\Listeners\Logs\User\ActivityRecordResetPassword',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserResetPassword' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordResetPassword',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserTypeAdded' => [
-            'App\Listeners\Logs\User\ActivityRecordUserTypeAdded',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserTypeAdded',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserTypeChangead' => [
-            'App\Listeners\Logs\User\ActivityRecordUserTypeChangead',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserTypeChangead',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserTypeRemoved' => [
-            'App\Listeners\Logs\User\ActivityRecordUserTypeRemoved',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserTypeRemoved' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserTypeRemoved',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserGenerateNewPassword' => [
-            'App\Listeners\Logs\User\ActivityRecordUserTypeGeneratePassword',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserGenerateNewPassword' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordUserTypeGeneratePassword',
         ],
 
-        'App\Events\Logs\User\EventActivityRecordUserRecoverPassword' => [
-            'App\Listeners\Logs\User\ActivityRecordRecoverPassword',
+        'Vialoja\Events\Logs\User\EventActivityRecordUserRecoverPassword' => [
+            'Vialoja\Listeners\Logs\User\ActivityRecordRecoverPassword',
         ],
 
         //+++++++++++++++++++++++++++++++++++++
         //------------ Send Emails ------------
         //+++++++++++++++++++++++++++++++++++++
-        'App\Events\Emails\EventNotifyNewUserRegistered' => [
-            'App\Listeners\Emails\SendEmailConfirmationCode',
+        'Vialoja\Events\Emails\EventNotifyNewUserRegistered' => [
+            'Vialoja\Listeners\Emails\SendEmailConfirmationCode',
         ],
 
-        'App\Events\Emails\EventNotifyUserRecoverPassword' => [
-            'App\Listeners\Emails\SendEmailRecoverPassword',
+        'Vialoja\Events\Emails\EventNotifyUserRecoverPassword' => [
+            'Vialoja\Listeners\Emails\SendEmailRecoverPassword',
         ],
 
-        'App\Events\Emails\EventNotifyResetPassword' => [
-            'App\Listeners\Emails\SendEmailConfirmationNewPassword',
+        'Vialoja\Events\Emails\EventNotifyResetPassword' => [
+            'Vialoja\Listeners\Emails\SendEmailConfirmationNewPassword',
         ],
 
-        'App\Events\Emails\EventNotifyNewUserAdminRegistered' => [
-            'App\Listeners\Emails\SendEmailPasswordNewUserAdmin',
+        'Vialoja\Events\Emails\EventNotifyNewUserAdminRegistered' => [
+            'Vialoja\Listeners\Emails\SendEmailPasswordNewUserAdmin',
         ],
 
-        'App\Events\Emails\EventNotifyNewPasswordGenerateUser' => [
-            'App\Listeners\Emails\SendEmailNewPasswordUser',
+        'Vialoja\Events\Emails\EventNotifyNewPasswordGenerateUser' => [
+            'Vialoja\Listeners\Emails\SendEmailNewPasswordUser',
         ],
 
     ];

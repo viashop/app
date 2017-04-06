@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace Vialoja\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Vialoja\Http\Controllers\Controller;
 
 use Artesaos\SEOTools\Facades\SEOMeta;
 

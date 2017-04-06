@@ -1,18 +1,18 @@
 <?php
 
 
-namespace App\Repositories\Control\User\Shop;
+namespace Vialoja\Repositories\Control\User\Shop;
 
 
-use App\Contracts\Repositories\Control\User\Shop\UserShopRepositoryInterface;
-use App\Events\Logs\User\EventActivityRecordUserTypeChangead;
-use App\Http\Requests\Control\User\ShopUserRequest;
-use App\Models\User;
+use Vialoja\Contracts\Repositories\Control\User\Shop\UserShopRepositoryInterface;
+use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
+use Vialoja\Http\Requests\Control\User\ShopUserRequest;
+use Vialoja\Models\User;
 use stdClass;
 
 /**
  * Class UserShopRepository
- * @package App\Repositories\Control\User\Shop
+ * @package Vialoja\Repositories\Control\User\Shop
  */
 class UserShopRepository implements UserShopRepositoryInterface
 {

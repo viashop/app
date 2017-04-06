@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\ConfigPayment as s;
+use Vialoja\Models\ConfigPayment as s;
 
 class ConfigPaymentsTableSeeder extends Seeder
 {

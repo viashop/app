@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Control\User;
+namespace Vialoja\Http\Requests\Control\User;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Listeners\Emails;
+namespace Vialoja\Listeners\Emails;
 
-use App\Events\Emails\EventNotifyUserRecoverPassword;
+use Vialoja\Events\Emails\EventNotifyUserRecoverPassword;
 use Exception;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 
 /**
  * Class SendEmailRecoverPassword
- * @package App\Listeners\Emails
+ * @package Vialoja\Listeners\Emails
  */
 class SendEmailRecoverPassword
 {

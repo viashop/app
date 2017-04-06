@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Traits\Storage;
+namespace Vialoja\Traits\Storage;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 /**
  * Class StorageDataUser
- * @package App\Traits\Storage
+ * @package Vialoja\Traits\Storage
  */
 trait StorageDataUser
 {

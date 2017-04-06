@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Repositories\OAuth;
+namespace Vialoja\Repositories\OAuth;
 
-use App\Contracts\Repositories\OAuth\OAuthExistsInterface;
-use App\Contracts\Repositories\OAuth\OAuthInterface;
-use App\Events\Logs\User\EventActivityRecordUserLogged;
-use App\Events\Logs\User\EventActivityRecordUserRegistered;
-use App\Models\OAuth;
-use App\Models\Role;
-use App\Models\User;
+use Vialoja\Contracts\Repositories\OAuth\OAuthExistsInterface;
+use Vialoja\Contracts\Repositories\OAuth\OAuthInterface;
+use Vialoja\Events\Logs\User\EventActivityRecordUserLogged;
+use Vialoja\Events\Logs\User\EventActivityRecordUserRegistered;
+use Vialoja\Models\OAuth;
+use Vialoja\Models\Role;
+use Vialoja\Models\User;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
@@ -16,7 +16,7 @@ use stdClass;
 
 /**
  * Class FacebookRepository
- * @package App\Repositories\OAuth
+ * @package Vialoja\Repositories\OAuth
  */
 class FacebookRepository implements OAuthInterface, OAuthExistsInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events\Logs\User;
+namespace Vialoja\Events\Logs\User;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
@@ -9,7 +9,7 @@ use stdClass;
 
 /**
  * Class EventActivityRecordUserLogged
- * @package App\Events\Logs\User
+ * @package Vialoja\Events\Logs\User
  */
 class EventActivityRecordUserLogged
 {

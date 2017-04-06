@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\ResourceFreeShipping as s;
+use Vialoja\Models\ResourceFreeShipping as s;
 
 class ResourceFreeShippingTableSeeder extends Seeder
 {

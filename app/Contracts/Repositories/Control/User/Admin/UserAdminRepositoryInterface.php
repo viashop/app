@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Contracts\Repositories\Control\User\Admin;
+namespace Vialoja\Contracts\Repositories\Control\User\Admin;
 
 
-use App\Http\Requests\Control\User\UserRegisterRequest;
-use App\Http\Requests\Control\User\UserUpdateRequest;
+use Vialoja\Http\Requests\Control\User\UserRegisterRequest;
+use Vialoja\Http\Requests\Control\User\UserUpdateRequest;
 
 interface UserAdminRepositoryInterface
 {
