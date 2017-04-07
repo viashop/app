@@ -198,7 +198,7 @@ $().ready(function(){
 
 });
 
-custom = {
+demo = {
     initPickColor: function(){
         $('.pick-class-label').click(function(){
             var new_class = $(this).attr('new-class');
@@ -653,93 +653,7 @@ custom = {
     	});
 	},
 
-    redirectUrl: function(url){
-        window.location.replace(url);
-    },
-
-
-    showSwalUser: function(type, url, string) {
-
-        if(type == 'delete-message-confirmation') {
-
-            swal({  title: "Tem certeza que deseja deletar?",
-                    text: string +" será enviado para usuários desativados!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Sim, deletar usuário!",
-                    cancelButtonText: "Cancelar",
-                    cancelButtonClass: "btn btn-danger btn-fill",
-                    closeOnConfirm: false,
-                },function(){
-                    custom.redirectUrl(url);
-                });
-
-        } else if(type == 'delete-trashed-message-confirmation') {
-
-            swal({  title: "Deseja realmente excluir permanentemente?",
-                    text: string +" será removido e não podera ser recuperado!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Sim, excluir usuário!",
-                    cancelButtonText: "Cancelar",
-                    cancelButtonClass: "btn btn-danger btn-fill",
-                    closeOnConfirm: false,
-                },function(){
-                    custom.redirectUrl(url);
-                });
-
-        } else if(type == 'restore-trashed-message-confirmation') {
-
-            swal({  title: "Deseja realmente restaurar o acesso?",
-                    text: string +" será restaurado para usuários ativos, verifique suas permissões!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Sim, restaurar usuário!",
-                    cancelButtonText: "Cancelar",
-                    cancelButtonClass: "btn btn-danger btn-fill",
-                    closeOnConfirm: false,
-                },function(){
-                    custom.redirectUrl(url);
-                });
-
-        } else if (type == 'password-message-confirmation') {
-
-            swal({  title: "Tem certeza que deseja gerar uma nova senha?",
-                    text: "Uma nova senha será enviada para o email " + string,
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Sim, gerar uma nova senha!",
-                    cancelButtonText: "Cancelar",
-                    cancelButtonClass: "btn btn-danger btn-fill",
-                    closeOnConfirm: false,
-                },function(){
-                    custom.redirectUrl(url);
-                });
-
-        } else if (type == 'remove-permissions-message-confirmation') {
-
-            swal({  title: "Deseja realmente remover permissões administrativas para este usuário?",
-                    text: "Permissões de acesso básico ainda serão mantidas para " + string,
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Sim, remover permissões!",
-                    cancelButtonText: "Cancelar",
-                    cancelButtonClass: "btn btn-danger btn-fill",
-                    closeOnConfirm: false,
-                },function(){
-                    custom.redirectUrl(url);
-                });
-
-        }
-
-    },
-
-	showSwal: function(type, url){
+	showSwal: function(type){
     	if(type == 'basic'){
         	swal("Here's a message!");
 
@@ -760,20 +674,6 @@ custom = {
                     closeOnConfirm: false,
                 },function(){
                     swal("Deleted!", "Your imaginary file has been deleted.", "success");
-                });
-
-    	}else if(type == 'confirmation-logout'){
-        	swal({  title: "Deseja realmente sair?",
-            	    text: "Clique no botão desconectar para sair com segurança!",
-            	    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Desconectar",
-                    cancelButtonText: "Cancelar",
-                    cancelButtonClass: "btn btn-danger btn-fill",
-                    closeOnConfirm: false,
-                },function(){
-                    custom.redirectUrl(url);
                 });
 
     	}else if(type == 'warning-message-and-cancel'){
@@ -828,7 +728,7 @@ custom = {
 
 	initFormExtendedSliders: function(){
 
-        // Sliders for custom purpose in refine cards section
+        // Sliders for demo purpose in refine cards section
         if($('#slider-range').length != 0){
             $( "#slider-range" ).slider({
         		range: true,

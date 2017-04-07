@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Pe-icon-7-stroke';
-	src:url('/light-pro/assets/fonts/Pe-icon-7-stroke.eot?d7yf1v');
-	src:url('/light-pro/assets/fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
-		url('/light-pro/assets/fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),
-		url('/light-pro/assets/fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'),
-		url('/fonts/Pe-icon-7-strokebb1d.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
+	src:url('/vendor/light-pro/assets/fonts/Pe-icon-7-stroke.eot?d7yf1v');
+	src:url('/vendor/light-pro/assets/fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
+		url('/vendor/light-pro/assets/fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),
+		url('/vendor/light-pro/assets/fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'),
+		url('/vendor/light-pro/assets/fonts/Pe-icon-7-strokebb1d.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
