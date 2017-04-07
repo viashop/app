@@ -16,5 +16,5 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="{{ asset('/vendor/light-pro/assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/vendor/light-pro/assets/css/custom.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/assets/custom/control/css/custom.css') }}" rel="stylesheet" />
 </head>
