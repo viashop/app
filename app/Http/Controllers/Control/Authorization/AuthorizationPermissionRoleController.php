@@ -3,9 +3,9 @@
 namespace Vialoja\Http\Controllers\Control\Authorization;
 
 use Vialoja\Http\Controllers\Controller;
-use Vialoja\Models\Permission;
-use Vialoja\Models\Role;
-use Vialoja\Models\User;
+use Vialoja\Entities\Permission;
+use Vialoja\Entities\Role;
+use Vialoja\Entities\User;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use Vialoja\Authorizations\Gate\CheckGate;

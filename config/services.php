@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Vialoja\Models\User::class,
+        'model' => Vialoja\Entities\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

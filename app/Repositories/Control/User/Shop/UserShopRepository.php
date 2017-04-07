@@ -7,7 +7,7 @@ namespace Vialoja\Repositories\Control\User\Shop;
 use Vialoja\Contracts\Repositories\Control\User\Shop\UserShopRepositoryInterface;
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
 use Vialoja\Http\Requests\Control\User\ShopUserRequest;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use stdClass;
 
 /**

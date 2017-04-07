@@ -8,7 +8,7 @@ use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
 use Vialoja\Http\Requests\Control\User\UserRegisterRequest;
 use Vialoja\Http\Requests\Control\User\UserUpdateRequest;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Exception;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;

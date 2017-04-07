@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\BannerPosition as s;
+use Vialoja\Entities\BannerPosition as s;
 
 class BannerPositionTableSeeder extends Seeder
 {

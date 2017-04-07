@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\User;
-use Vialoja\Models\Role;
+use Vialoja\Entities\User;
+use Vialoja\Entities\Role;
 
 class UserTableSeeder extends Seeder
 {

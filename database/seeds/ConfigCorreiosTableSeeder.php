@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\ConfigCorreios as s;
+use Vialoja\Entities\ConfigCorreios as s;
 
 class ConfigCorreiosTableSeeder extends Seeder
 {

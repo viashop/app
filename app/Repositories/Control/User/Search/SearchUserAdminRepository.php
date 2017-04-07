@@ -3,7 +3,7 @@
 namespace Vialoja\Repositories\Control\User\Search;
 
 use Vialoja\Contracts\Repositories\Control\User\Search\SearchUserAdminRepositoryInterface;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 
 /**
  * Class SearchUserAdminRepository

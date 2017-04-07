@@ -9,8 +9,8 @@ use Vialoja\Traits\Filters\ValidatePassword;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Support\Facades\Auth;
 use Respect\Validation\Validator as v;
-use Vialoja\Models\Role;
-use Vialoja\Models\User;
+use Vialoja\Entities\Role;
+use Vialoja\Entities\User;
 
 class PersonalController extends Controller
 {

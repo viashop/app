@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\SubdomainNotAllowed as s;
+use Vialoja\Entities\SubdomainNotAllowed as s;
 
 class SubdomainNotAllowedsTableSeeder extends Seeder
 {

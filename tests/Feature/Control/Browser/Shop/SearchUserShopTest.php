@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Control\Browser\Shop;
 
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Tests\TestCase;
 
 class SearchUserShopTest extends TestCase

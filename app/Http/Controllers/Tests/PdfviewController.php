@@ -5,7 +5,7 @@ namespace Vialoja\Http\Controllers\Tests;
 use Illuminate\Http\Request;
 use Vialoja\Http\Controllers\Controller;
 use Barryvdh\DomPDF\Facade as PDF;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 
 class PdfviewController extends Controller
 {

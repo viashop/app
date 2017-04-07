@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\Comparator as s;
+use Vialoja\Entities\Comparator as s;
 
     class ComparatorTableSeeder extends Seeder
 {

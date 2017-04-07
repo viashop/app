@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Control\Browser\Authorization;
 
-use Vialoja\Models\Role;
+use Vialoja\Entities\Role;
 use Tests\TestCase;
 
 class RoleTest extends TestCase

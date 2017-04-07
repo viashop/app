@@ -4,8 +4,8 @@ namespace Vialoja\Http\Controllers\Control\User\Admin;
 
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Http\Requests\Control\User\UserUpdateRequest;
-use Vialoja\Models\Role;
-use Vialoja\Models\User;
+use Vialoja\Entities\Role;
+use Vialoja\Entities\User;
 use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Vialoja\Authorizations\Gate\CheckGate;

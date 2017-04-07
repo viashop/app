@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\ShopGridVariation;
+use Vialoja\Entities\ShopGridVariation;
 
 class ShopGridVariationsTable extends Seeder
 {

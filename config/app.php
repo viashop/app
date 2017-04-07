@@ -180,6 +180,7 @@ return [
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         Artdarek\OAuth\OAuthServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
 

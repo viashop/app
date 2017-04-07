@@ -5,7 +5,7 @@ namespace Vialoja\Http\Controllers\Control\User\Admin;
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
 use Vialoja\Authorizations\Gate\CheckGate;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Exception;
 
 /**

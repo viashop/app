@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\ShopGrid;
+use Vialoja\Entities\ShopGrid;
 
 class ShopGridsTableSeeder extends Seeder
 {

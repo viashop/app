@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\LogActivityType as s;
+use Vialoja\Entities\LogActivityType as s;
 
 class LogActivityTypesTableSeeder extends Seeder
 {

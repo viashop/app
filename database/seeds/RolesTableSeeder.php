@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\Role;
-use Vialoja\Models\Permission;
+use Vialoja\Entities\Role;
+use Vialoja\Entities\Permission;
 
 class RolesTableSeeder extends Seeder
 {

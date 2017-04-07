@@ -3,7 +3,7 @@
 namespace Vialoja\Events\Emails;
 
 use Vialoja\Http\Requests\Account\RecoverPasswordRequest;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

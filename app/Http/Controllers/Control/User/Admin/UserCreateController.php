@@ -5,7 +5,7 @@ namespace Vialoja\Http\Controllers\Control\User\Admin;
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Http\Requests\Control\User\UserRegisterRequest;
 use Vialoja\Repositories\Control\User\Admin\UserAdminRepository;
-use Vialoja\Models\Role;
+use Vialoja\Entities\Role;
 use Vialoja\Authorizations\Gate\CheckGate;
 use Artesaos\SEOTools\Facades\SEOMeta;
 

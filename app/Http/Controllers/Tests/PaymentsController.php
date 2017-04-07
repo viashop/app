@@ -4,7 +4,7 @@ namespace Vialoja\Http\Controllers\Tests;
 
 use Illuminate\Http\Request;
 use Vialoja\Http\Controllers\Controller;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Excel;
 
 class PaymentsController extends Controller

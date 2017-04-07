@@ -5,7 +5,7 @@ namespace Vialoja\Http\Controllers\Control\Password;
 use Vialoja\Events\Emails\EventNotifyNewPasswordGenerateUser;
 use Vialoja\Events\Logs\User\EventActivityRecordUserGenerateNewPassword;
 use Vialoja\Http\Controllers\Controller;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Vialoja\Authorizations\Gate\CheckGate;
 use stdClass;
 

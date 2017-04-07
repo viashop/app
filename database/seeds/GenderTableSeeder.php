@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\Gender as s;
+use Vialoja\Entities\Gender as s;
 
 class GenderTableSeeder extends Seeder
 {

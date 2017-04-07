@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Vialoja\Models\User::class,
+            'model' => Vialoja\Entities\User::class,
         ],
 
         // 'users' => [

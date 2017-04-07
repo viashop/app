@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Account\Browser;
 
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Tests\TestCase;
 
 class LoginTest extends TestCase

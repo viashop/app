@@ -7,7 +7,7 @@ use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeRemoved;
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Http\Requests\Control\Authorization\PermissonRequest;
-use Vialoja\Models\Permission;
+use Vialoja\Entities\Permission;
 use Vialoja\Authorizations\Gate\CheckGate;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;

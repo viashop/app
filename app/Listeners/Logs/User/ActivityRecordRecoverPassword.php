@@ -3,8 +3,8 @@
 namespace Vialoja\Listeners\Logs\User;
 
 use Vialoja\Events\Logs\User\EventActivityRecordUserRecoverPassword;
-use Vialoja\Models\LogActivityType;
-use Vialoja\Models\LogActivityUser;
+use Vialoja\Entities\LogActivityType;
+use Vialoja\Entities\LogActivityUser;
 use Vialoja\Traits\Headers\RequestHeaders;
 
 /**

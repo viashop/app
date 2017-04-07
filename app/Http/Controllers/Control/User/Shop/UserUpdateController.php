@@ -5,7 +5,7 @@ namespace Vialoja\Http\Controllers\Control\User\Shop;
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Http\Requests\Control\User\ShopUserRequest;
 use Vialoja\Repositories\Control\User\Shop\UserShopRepository;
-use Vialoja\Models\Role;
+use Vialoja\Entities\Role;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Vialoja\Authorizations\Gate\CheckGate;
 

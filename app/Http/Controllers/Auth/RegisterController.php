@@ -2,7 +2,7 @@
 
 namespace Vialoja\Http\Controllers\Auth;
 
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Vialoja\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;

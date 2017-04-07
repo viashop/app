@@ -3,7 +3,7 @@
 namespace Vialoja\Http\Controllers\Control;
 
 use Vialoja\Http\Controllers\Controller;
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Vialoja\Authorizations\Gate\CheckGate;
 

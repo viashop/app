@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\ShopType as s;
+use Vialoja\Entities\ShopType as s;
 
 class ShopTypeTableSeeder extends Seeder
 {

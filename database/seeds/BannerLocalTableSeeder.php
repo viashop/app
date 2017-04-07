@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\BannerLocal as s;
+use Vialoja\Entities\BannerLocal as s;
 
 class BannerLocalTableSeeder extends Seeder
 {

@@ -3,8 +3,8 @@
 namespace Vialoja\Listeners\Logs\User;
 
 use Vialoja\Events\Logs\User\EventActivityRecordUserLoginPasswordInvalid;
-use Vialoja\Models\LogActivityGlobal;
-use Vialoja\Models\LogActivityType;
+use Vialoja\Entities\LogActivityGlobal;
+use Vialoja\Entities\LogActivityType;
 use Vialoja\Traits\Headers\RequestHeaders;
 use Illuminate\Support\Facades\Request;
 

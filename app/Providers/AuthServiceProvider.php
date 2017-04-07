@@ -5,8 +5,8 @@ namespace Vialoja\Providers;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use \Vialoja\Models\User;
-use \Vialoja\Models\Permission;
+use \Vialoja\Entities\User;
+use \Vialoja\Entities\Permission;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -16,7 +16,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        //\Vialoja\Models\User::class => \Vialoja\Policies\Control\UserPolicy::class,
+        //\Vialoja\Entities\User::class => \Vialoja\Policies\Control\UserPolicy::class,
     ];
 
     /**

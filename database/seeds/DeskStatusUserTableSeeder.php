@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\DeskStatusUser as s;
+use Vialoja\Entities\DeskStatusUser as s;
 
 class DeskStatusUserTableSeeder extends Seeder
 {

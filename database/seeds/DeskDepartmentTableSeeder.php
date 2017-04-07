@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Vialoja\Models\DeskDepartment as s;
+use Vialoja\Entities\DeskDepartment as s;
 
 class DeskDepartmentTableSeeder extends Seeder
 {

@@ -2,7 +2,7 @@
 
 namespace Vialoja\Console\Commands;
 
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Illuminate\Console\Command;
 
 class InactiveUser extends Command

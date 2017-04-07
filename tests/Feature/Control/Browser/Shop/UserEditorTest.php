@@ -3,8 +3,8 @@
 namespace Tests\Feature\Control\Browser\Shop;
 
 use Tests\TestCase;
-use Vialoja\Models\User;
-use Vialoja\Models\Role;
+use Vialoja\Entities\User;
+use Vialoja\Entities\Role;
 
 class UserEditorTest extends TestCase
 {

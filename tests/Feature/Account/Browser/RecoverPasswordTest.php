@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Account\Browser;
 
-use Vialoja\Models\Role;
-use Vialoja\Models\User;
+use Vialoja\Entities\Role;
+use Vialoja\Entities\User;
 use Tests\TestCase;
 
 class RecoverPasswordTest extends TestCase

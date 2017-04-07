@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Control\Browser\User;
 
-use Vialoja\Models\User;
+use Vialoja\Entities\User;
 use Tests\TestCase;
 
 class SearchUserAdminTest extends TestCase
