@@ -2,83 +2,42 @@
 
 namespace Vialoja\Http\Controllers\Control\Authorization\Role;
 
-use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
-use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
-use Vialoja\Events\Logs\User\EventActivityRecordUserTypeRemoved;
-use Vialoja\Http\Controllers\Controller;
-use Vialoja\Http\Requests\Control\Authorization\RoleRequest;
-use Vialoja\Entities\Role;
-use Vialoja\Authorizations\Gate\CheckGate;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
-use stdClass;
+use Vialoja\Authorizations\Gate\CheckGate;
+use Vialoja\Http\Controllers\Controller;
+use Vialoja\Http\Requests\Control\Authorization\RoleRequest;
+use Vialoja\Http\Requests\Control\Authorization\RoleUpdateRequest;
+use Vialoja\Repositories\Control\RoleRepository;
+use Vialoja\Services\Control\RoleService;
+use Config;
 
 class RoleController extends Controller
 {
 
+
     use CheckGate;
 
     /**
-     * @var Role
+     * @var RoleRepository
      */
-    protected $role;
+    private $repository;
 
     /**
-     * RoleCreateController constructor.
-     * @param Role $role
+     * @var RoleService
      */
-    public function __construct(Role $role)
-    {
-        $this->role = $role;
-    }
+    private $service;
+
 
     /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * RoleController constructor.
+     * @param RoleRepository $repository
+     * @param RoleService $service
      */
-    public function create()
+    public function __construct(RoleRepository $repository, RoleService $service)
     {
-        $this->checkPermission('add_administrator');
-        SEOMeta::setTitle('Criar Funções');
-        return view('control.authorization.role.create');
-    }
-
-    private function existsRole(RoleRequest $request)
-    {
-        return $this->role->where(function ($query) use ($request) {
-                $query->where('name', str_slug($request->input('name')))
-                      ->orWhere('description', $request->input('description'));
-            })->count();
-    }
-
-    /**
-     * @param RoleRequest $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function createPost(RoleRequest $request)
-    {
-
-        $this->checkPermission('add_administrator');
-
-        try {
-
-            if ($this->existsRole($request) > 0) {
-                return redirect()->route('control.authorization.role.read')->with('danger', \Config('constants.MSG_DATA_EQUALS_REGISTERED'));
-            }
-
-            $stdClass = new stdClass();
-            $stdClass->new = $this->role->create([
-                    'name' => str_slug( $request->input('name'), '_' ),
-                    'description' => $request->input('description')
-                ]);
-
-            event(new EventActivityRecordUserTypeAdded($stdClass));
-
-            return redirect()->route('control.authorization.role.read.search', $request->input('description'))->with('success', \Config('constants.MSG_DATA_REGISTERED_SUCCESS'));
-
-        } catch (\Exception $e) {
-            return redirect()->route('control.authorization.role.read')->with('danger', \Config('constants.ERROR_PROCESS'));
-        }
-
+        $this->repository = $repository;
+        $this->service = $service;
     }
 
     /**
@@ -91,13 +50,8 @@ class RoleController extends Controller
         $this->checkPermission('read_staff_auditor');
         SEOMeta::setTitle('Funções');
 
-        $search = tools_sanitize_search($request->get('search'));
-
-        if (!empty($search)) {
-            $roles = $this->role->where('description', 'like', "%$search%")->paginate(50);
-        } else {
-            $roles = $this->role->paginate(50);
-        }
+        $search = $request->get('search');
+        $roles = $this->repository->read($search);
 
         return view('control.authorization.role.read', compact('roles', 'search'));
 
@@ -105,6 +59,39 @@ class RoleController extends Controller
 
 
     /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function create()
+    {
+        $this->checkPermission('add_administrator');
+        SEOMeta::setTitle('Criar Funções');
+        return view('control.authorization.role.create');
+    }
+
+
+    /**
+     * @param RoleRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function createPost(RoleRequest $request)
+    {
+
+        $this->checkPermission('add_administrator');
+
+        try {
+
+            $this->service->create($request);
+
+            return redirect()->route('control.authorization.role.read.search', $request->input('description'))->with('success', Config('constants.MSG_DATA_REGISTERED_SUCCESS'));
+
+        } catch (\Exception $e) {
+            return redirect()->route('control.authorization.role.read')->with('danger', Config('constants.ERROR_PROCESS'));
+        }
+
+    }
+
+    /**
+     * Update Role
      * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -112,41 +99,28 @@ class RoleController extends Controller
     {
         $this->checkPermission('edit_administrator');
         SEOMeta::setTitle('Editar Função');
-        $role = $this->role->findOrFail($id);
+
+        $role = $this->repository->findOrFail($id);
+
         return view('control.authorization.role.update', compact('role'));
     }
 
     /**
-     * @param RoleRequest $request
+     * @param RoleUpdateRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function updatePost(RoleRequest $request)
+    public function updatePost(RoleUpdateRequest $request)
     {
 
         $this->checkPermission('edit_administrator');
 
         try {
 
-            if ($this->role->where('id', $request->input('role_id'))->count() <= 0) {
-                throw new \Exception();
-            }
-
-            $stdClass = new stdClass();
-            $stdClass->old = $this->role->findOrFail($request->input('role_id'));
-
-            $this->role->where('id', $request->input('role_id'))
-                ->update([
-                    'name' => str_slug( $request->input('name'), '_' ),
-                    'description' => $request->input('description')
-                ]);
-
-            $stdClass->new = $this->role->findOrFail($request->input('role_id'));
-            event(new EventActivityRecordUserTypeChangead($stdClass));
-
-            return redirect()->route('control.authorization.role.read')->with('success', \Config('constants.MSG_USER_UPDATE_SUCCESS'));
+            $this->service->update($request);
+            return redirect()->route('control.authorization.role.read')->with('success', Config('constants.MSG_USER_UPDATE_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.authorization.role.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.authorization.role.read')->with('danger', Config('constants.ERROR_PROCESS'));
         }
 
     }
@@ -159,27 +133,12 @@ class RoleController extends Controller
     {
 
         $this->checkPermission('delete_administrator');
-
         try {
-
-            if ($id <= 11) {
-                return redirect()->back()->with('danger', \Config('constants.MSG_NOT_AUTHORIZED'));
-            }
-
-            if ($this->role->where('id', $id)->where('default', '!=', 1)->count() > 0) {
-
-                $stdClass = new stdClass();
-                $stdClass->old = $this->role->findOrFail($id);
-                $this->role->destroy($id);
-                event(new EventActivityRecordUserTypeRemoved($stdClass));
-
-            }
-
+            $this->service->delete($id);
         } catch (\Exception $e) {
-            return redirect()->back()->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->back()->with('danger', Config('constants.ERROR_PROCESS'));
         }
-
-        return redirect()->back()->with('success', \Config('constants.MSG_DATA_REMOVED_SUCCESS'));
+        return redirect()->back()->with('success', Config('constants.MSG_DATA_REMOVED_SUCCESS'));
 
     }
 

@@ -176,11 +176,11 @@ return [
         // Vialoja\Providers\BroadcastServiceProvider::class,
         Vialoja\Providers\EventServiceProvider::class,
         Vialoja\Providers\RouteServiceProvider::class,
+        Vialoja\Providers\VialojaControlServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         Artdarek\OAuth\OAuthServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
