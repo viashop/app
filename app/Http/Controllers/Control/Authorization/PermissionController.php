@@ -1,6 +1,6 @@
 <?php
 
-namespace Vialoja\Http\Controllers\Control\Authorization\Permission;
+namespace Vialoja\Http\Controllers\Control\Authorization;
 
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;

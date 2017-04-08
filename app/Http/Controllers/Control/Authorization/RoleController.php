@@ -1,20 +1,19 @@
 <?php
 
-namespace Vialoja\Http\Controllers\Control\Authorization\Role;
+namespace Vialoja\Http\Controllers\Control\Authorization;
 
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 use Vialoja\Authorizations\Gate\CheckGate;
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Http\Requests\Control\Authorization\RoleRequest;
 use Vialoja\Http\Requests\Control\Authorization\RoleUpdateRequest;
 use Vialoja\Repositories\Control\RoleRepository;
 use Vialoja\Services\Control\RoleService;
-use Config;
 
 class RoleController extends Controller
 {
-
 
     use CheckGate;
 
@@ -63,9 +62,12 @@ class RoleController extends Controller
      */
     public function create()
     {
+
         $this->checkPermission('add_administrator');
         SEOMeta::setTitle('Criar Funções');
+
         return view('control.authorization.role.create');
+
     }
 
 
@@ -81,7 +83,6 @@ class RoleController extends Controller
         try {
 
             $this->service->create($request);
-
             return redirect()->route('control.authorization.role.read.search', $request->input('description'))->with('success', Config::get('constants.MSG_DATA_REGISTERED_SUCCESS'));
 
         } catch (\Exception $e) {
@@ -100,6 +101,7 @@ class RoleController extends Controller
 
         $this->checkPermission('edit_administrator');
         SEOMeta::setTitle('Editar Função');
+
         $role = $this->repository->findOrFail($id);
         return view('control.authorization.role.update', compact('role'));
 
@@ -132,15 +134,13 @@ class RoleController extends Controller
     public function delete($id)
     {
 
-
         $this->checkPermission('delete_administrator');
         try {
             $this->service->delete($id);
+            return redirect()->back()->with('success', Config::get('constants.MSG_DATA_REMOVED_SUCCESS'));
         } catch (\Exception $e) {
             return redirect()->back()->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
-
-        return redirect()->back()->with('success', Config::get('constants.MSG_DATA_REMOVED_SUCCESS'));
 
     }
 

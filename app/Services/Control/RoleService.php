@@ -2,6 +2,7 @@
 
 namespace Vialoja\Services\Control;
 
+use Exception;
 use stdClass;
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeAdded;
 use Vialoja\Events\Logs\User\EventActivityRecordUserTypeChangead;
@@ -50,13 +51,13 @@ class RoleService
 
     /**
      * @param RoleUpdateRequest $request
-     * @throws \Exception
+     * @throws Exception
      */
     public function update(RoleUpdateRequest $request)
     {
 
         if (!$this->repository->exists($request->input('role_id'))) {
-            throw new \Exception();
+            throw new Exception();
         }
 
         $this->std->old = $this->repository->findOrFail($request->input('role_id'));
@@ -64,7 +65,6 @@ class RoleService
 
         $this->std->new = $this->repository->findOrFail($request->input('role_id'));
         event(new EventActivityRecordUserTypeChangead($this->std));
-
 
     }
 
