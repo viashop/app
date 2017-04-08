@@ -2,6 +2,7 @@
 
 namespace Vialoja\Repositories\Control;
 
+use InvalidArgumentException;
 use Vialoja\Entities\Role;
 use Vialoja\Http\Requests\Control\Authorization\RoleRequest;
 use Vialoja\Http\Requests\Control\Authorization\RoleUpdateRequest;
@@ -47,7 +48,7 @@ class RoleRepositoryEloquent implements RoleRepository
     {
 
         if ($this->total($request) > 0) {
-            throw new \InvalidArgumentException();
+            throw new InvalidArgumentException();
         }
 
         return $this->role->create([
@@ -89,7 +90,7 @@ class RoleRepositoryEloquent implements RoleRepository
     {
 
         if (!$this->exists($request->input('role_id'))) {
-            throw new \InvalidArgumentException();
+            throw new InvalidArgumentException();
         }
 
         if ($this->isRoleDefault($request->input('role_id'))) {
@@ -118,7 +119,7 @@ class RoleRepositoryEloquent implements RoleRepository
     {
 
         if ($this->isRoleDefault($id)) {
-            throw new \InvalidArgumentException();
+            throw new InvalidArgumentException();
         }
 
         $this->role->destroy($id);

@@ -18,7 +18,7 @@ class RoleService
      * @var RoleRepository
      */
     protected $repository;
-    
+
     /**
      * @var stdClass
      */
@@ -38,6 +38,7 @@ class RoleService
 
 
     /**
+     * Create
      * @param RoleRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -50,6 +51,7 @@ class RoleService
     }
 
     /**
+     * Update
      * @param RoleUpdateRequest $request
      * @throws Exception
      */

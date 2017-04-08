@@ -2,9 +2,10 @@
 
 namespace Vialoja\Http\Controllers\Control\Authorization;
 
-use Artesaos\SEOTools\Facades\SEOMeta;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
+use Artesaos\SEOTools\Facades\SEOMeta;
 use Vialoja\Authorizations\Gate\CheckGate;
 use Vialoja\Http\Controllers\Controller;
 use Vialoja\Http\Requests\Control\Authorization\RoleRequest;
@@ -58,6 +59,7 @@ class RoleController extends Controller
 
 
     /**
+     * Create new Role
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
@@ -72,6 +74,7 @@ class RoleController extends Controller
 
 
     /**
+     * Receive Post New Role
      * @param RoleRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -85,7 +88,7 @@ class RoleController extends Controller
             $this->service->create($request);
             return redirect()->route('control.authorization.role.read.search', $request->input('description'))->with('success', Config::get('constants.MSG_DATA_REGISTERED_SUCCESS'));
 
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return redirect()->route('control.authorization.role.read')->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
 
@@ -108,6 +111,7 @@ class RoleController extends Controller
     }
 
     /**
+     * Receive Post Update data Role
      * @param RoleUpdateRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -121,13 +125,14 @@ class RoleController extends Controller
             $this->service->update($request);
             return redirect()->route('control.authorization.role.read')->with('success', Config::get('constants.MSG_USER_UPDATE_SUCCESS'));
 
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return redirect()->route('control.authorization.role.read')->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
 
     }
 
     /**
+     * Delete Role
      * @param $id
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -138,7 +143,7 @@ class RoleController extends Controller
         try {
             $this->service->delete($id);
             return redirect()->back()->with('success', Config::get('constants.MSG_DATA_REMOVED_SUCCESS'));
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return redirect()->back()->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
 
