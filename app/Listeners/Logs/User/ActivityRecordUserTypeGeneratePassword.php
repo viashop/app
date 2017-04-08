@@ -20,6 +20,7 @@ class ActivityRecordUserTypeGeneratePassword
      * @var LogActivityType
      */
     private $type;
+
     /**
      * @var LogActivityUser
      */
@@ -49,9 +50,9 @@ class ActivityRecordUserTypeGeneratePassword
 
         $this->log->create([
             'user_id' => Auth::user()->id,
-            'reference_new' => json_encode( $event->stdClass->new ),
+            'reference_new' => json_encode( $event->std->new ),
             'activity_log_type_id' => $this->type->where('name', 'generate-password')->first()->id,
-            'reference_table_type' => get_class($event->stdClass->new),
+            'reference_table_type' => get_class($event->std->new),
             'request_header' => $this->eventsRequestHeaders(),
         ]);
 

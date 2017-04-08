@@ -19,17 +19,17 @@ class EventNotifyNewPasswordGenerateUser
     /**
      * @var stdClass
      */
-    public $stdClass;
+    public $std;
 
     /**
      * Create a new event instance.
      *
      * EventNotifyNewPasswordGenerateUser constructor.
-     * @param stdClass $stdClass
+     * @param stdClass $std
      */
-    public function __construct(stdClass $stdClass)
+    public function __construct(stdClass $std)
     {
-        $this->stdClass = $stdClass;
+        $this->std = $std;
     }
 
 }

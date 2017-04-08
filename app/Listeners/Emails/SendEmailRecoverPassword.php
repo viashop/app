@@ -25,16 +25,16 @@ class SendEmailRecoverPassword
         $subject = Config::get('constants.SUBJECT_RECOVER_PASSWORD');
 
         $data = [
-            'name' => $event->stdClass->old->name,
-            'email' => $event->stdClass->old->email,
+            'name' => $event->std->old->name,
+            'email' => $event->std->old->email,
             'subject' => $subject,
-            'token' => $event->stdClass->new->token,
+            'token' => $event->std->new->token,
             'issued' => tools_issued_date(),
         ];
 
         $send = Mail::send('email.account.recover-password', $data, function ($message) use ($event, $subject){
             $message->from( Config::get('mail.from.contact') )
-                ->to($event->stdClass->old->email)
+                ->to($event->std->old->email)
                 ->subject($subject);
         });
 

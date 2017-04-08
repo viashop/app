@@ -21,6 +21,7 @@ class ActivityRecordUserLoginInvalid
      * @var LogActivityType
      */
     private $type;
+
     /**
      * @var LogActivityGlobal
      */
@@ -47,7 +48,7 @@ class ActivityRecordUserLoginInvalid
     {
 
         $this->log->create([
-            'reference_new' => json_encode( $event->stdClass->new ),
+            'reference_new' => json_encode( $event->std->new ),
             'activity_log_type_id' => $this->type->where('name', 'global-login-invalid')->first()->id,
             'request_header' => $this->eventsRequestHeaders(),
             'ip' => Request::ip()

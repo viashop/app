@@ -22,6 +22,7 @@ class ActivityRecordLoginPasswordInvalid
      * @var LogActivityType
      */
     private $type;
+
     /**
      * @var LogActivityGlobal
      */
@@ -49,10 +50,10 @@ class ActivityRecordLoginPasswordInvalid
     {
 
         $this->log->create([
-            'user_id' => $event->stdClass->new->id,
-            'reference_new' => json_encode( $event->stdClass->new ),
+            'user_id' => $event->std->new->id,
+            'reference_new' => json_encode( $event->std->new ),
             'activity_log_type_id' => $this->type->where('name', 'global-login-password-invalid')->first()->id,
-            'reference_table_type' => get_class($event->stdClass->new),
+            'reference_table_type' => get_class($event->std->new),
             'request_header' => $this->eventsRequestHeaders(),
             'ip' => Request::ip()
         ]);

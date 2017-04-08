@@ -25,14 +25,14 @@ class SendEmailConfirmationNewPassword
         $subject = Config::get('constants.SUBJECT_RESET_PASSWORD');
 
         $data = [
-            'name' => $event->stdClass->new->name,
-            'email' => $event->stdClass->new->email,
+            'name' => $event->std->new->name,
+            'email' => $event->std->new->email,
             'subject' => $subject
         ];
 
         Mail::send('email.account.password-has-been-reset', $data, function ($message) use ($event, $subject){
             $message->from( Config::get('mail.from.contact'))
-                ->to($event->stdClass->new->email)
+                ->to($event->std->new->email)
                 ->subject($subject);
         });
 

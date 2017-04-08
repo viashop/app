@@ -17,6 +17,7 @@ class ActivityRecordUserTypeRemoved
      * @var LogActivityType
      */
     private $type;
+
     /**
      * @var LogActivityUser
      */
@@ -46,9 +47,9 @@ class ActivityRecordUserTypeRemoved
 
         $this->log->create([
             'user_id' => Auth::user()->id,
-            'reference_old' => json_encode(isset($event->stdClass->old) ? $event->stdClass->old : null),
+            'reference_old' => json_encode(isset($event->std->old) ? $event->std->old : null),
             'activity_log_type_id' => $this->type->where('name', 'removed')->first()->id,
-            'reference_table_type' => get_class(isset($event->stdClass->old) ? $event->stdClass->old : null),
+            'reference_table_type' => get_class(isset($event->std->old) ? $event->std->old : null),
             'request_header' => $this->eventsRequestHeaders(),
         ]);
 

@@ -27,7 +27,7 @@ class RoleService
     /**
      * RoleService constructor.
      * @param RoleRepository $repository
-     * @param stdClass $tstdClass
+     * @param stdClass $std
      */
     public function __construct(RoleRepository $repository, stdClass $std)
     {

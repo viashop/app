@@ -18,16 +18,16 @@ class EventActivityRecordUserGenerateNewPassword
     /**
      * @var stdClass
      */
-    public $stdClass;
+    public $std;
 
 
     /**
      * EventActivityRecordUserGenerateNewPassword constructor.
-     * @param stdClass $stdClass
+     * @param stdClass $std
      */
-    public function __construct(stdClass $stdClass)
+    public function __construct(stdClass $std)
     {
-        $this->stdClass = $stdClass;
+        $this->std = $std;
     }
 
 }

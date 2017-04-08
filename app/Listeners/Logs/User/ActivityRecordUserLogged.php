@@ -20,6 +20,7 @@ class ActivityRecordUserLogged
      * @var LogActivityType
      */
     private $type;
+
     /**
      * @var LogActivityUser
      */
@@ -47,9 +48,9 @@ class ActivityRecordUserLogged
     {
 
         $this->log->create([
-            'user_id' => $event->stdClass->new->id,
+            'user_id' => $event->std->new->id,
             'activity_log_type_id' => $this->type->where('name', 'logged')->first()->id,
-            'reference_table_type' => get_class($event->stdClass->new),
+            'reference_table_type' => get_class($event->std->new),
             'request_header' => $this->eventsRequestHeaders()
         ]);
 

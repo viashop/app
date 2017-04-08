@@ -8,12 +8,23 @@ use Vialoja\Entities\LogActivityUser;
 use Vialoja\Traits\Headers\RequestHeaders;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * Class ActivityRecordUserTypeChangead
+ * @package Vialoja\Listeners\Logs\User
+ */
 class ActivityRecordUserTypeChangead
 {
 
     use RequestHeaders;
 
+    /**
+     * @var LogActivityType
+     */
     private $type;
+
+    /**
+     * @var LogActivityUser
+     */
     private $log;
 
     /**
@@ -40,10 +51,10 @@ class ActivityRecordUserTypeChangead
 
         $this->log->create([
             'user_id' => Auth::user()->id,
-            'reference_old' => json_encode(isset($event->stdClass->old) ? $event->stdClass->old : null),
-            'reference_new' => json_encode(isset($event->stdClass->new) ? $event->stdClass->new : null),
+            'reference_old' => json_encode(isset($event->std->old) ? $event->std->old : null),
+            'reference_new' => json_encode(isset($event->std->new) ? $event->std->new : null),
             'activity_log_type_id' => $this->type->where('name', 'changead')->first()->id,
-            'reference_table_type' => get_class(isset($event->stdClass->new) ? $event->stdClass->new : null),
+            'reference_table_type' => get_class(isset($event->std->new) ? $event->std->new : null),
             'request_header' => $this->eventsRequestHeaders(),
         ]);
 

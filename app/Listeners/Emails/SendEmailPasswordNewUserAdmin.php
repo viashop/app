@@ -23,15 +23,15 @@ class SendEmailPasswordNewUserAdmin
         $subject = Config::get('constants.SUBJECT_NEW_USER_ADMIN');
 
         $data = [
-            'name' => $event->stdClass->new->name,
-            'email' => $event->stdClass->new->email,
-            'password' => $event->stdClass->password,
+            'name' => $event->std->new->name,
+            'email' => $event->std->new->email,
+            'password' => $event->std->password,
             'subject' => $subject
         ];
 
         Mail::send('email.control.password.new-password-user-admin', $data, function ($message) use ($event, $subject) {
             $message->from(Config::get('mail.from.contact'))
-                ->to($event->stdClass->new->email)
+                ->to($event->std->new->email)
                 ->subject($subject);
         });
 

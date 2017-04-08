@@ -40,6 +40,7 @@ class RoleRepositoryEloquent implements RoleRepository
     }
 
     /**
+     * Register new role
      * @param RoleRequest $request
      */
     public function create(RoleRequest $request)
@@ -49,7 +50,7 @@ class RoleRepositoryEloquent implements RoleRepository
             throw new \InvalidArgumentException();
         }
 
-        $this->role->create([
+        return $this->role->create([
             'name' => str_slug( $request->input('name'), '_' ),
             'description' => $request->input('description')
         ]);
@@ -69,7 +70,11 @@ class RoleRepositoryEloquent implements RoleRepository
         })->count();
     }
 
-
+    /**
+     * Get data via ID
+     * @param $id
+     * @return array
+     */
     public function findOrFail($id)
     {
         return $this->role->findOrFail($id);
@@ -78,7 +83,7 @@ class RoleRepositoryEloquent implements RoleRepository
     /**
      * Update Role
      * @param RoleUpdateRequest $request
-     * @return mixed
+     * @return array
      */
     public function update(RoleUpdateRequest $request)
     {
@@ -96,7 +101,7 @@ class RoleRepositoryEloquent implements RoleRepository
 
         }
 
-        $this->role->where('id', $request->input('role_id'))->where('default', '=', 1)
+        return $this->role->where('id', $request->input('role_id'))->where('default', '=', 1)
             ->update([
                 'name' => str_slug( $request->input('name'), '_' ),
                 'description' => $request->input('description')
@@ -130,7 +135,11 @@ class RoleRepositoryEloquent implements RoleRepository
         return $this->role->where('id', '=', intval($id))->exists();
     }
 
-
+    /**
+     * Is Role Default
+     * @param $id
+     * @return boolean
+     */
     private function isRoleDefault($id)
     {
         return $this->role->where('id', intval($id))->where('default', '=', 1)->exists();

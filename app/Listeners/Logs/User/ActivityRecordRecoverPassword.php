@@ -47,9 +47,9 @@ class ActivityRecordRecoverPassword
     {
 
         $this->log->create([
-            'user_id' => $event->stdClass->old->id,
+            'user_id' => $event->std->old->id,
             'activity_log_type_id' => $this->type->where('name', 'recover-password')->first()->id,
-            'reference_table_type' => get_class($event->stdClass->old),
+            'reference_table_type' => get_class($event->std->old),
             'request_header' => $this->eventsRequestHeaders()
         ]);
 

@@ -2,8 +2,6 @@
 
 namespace Vialoja\Events\Emails;
 
-use Vialoja\Http\Requests\Account\RecoverPasswordRequest;
-use Vialoja\Entities\User;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
@@ -21,17 +19,17 @@ class EventNotifyUserRecoverPassword
     /**
      * @var stdClass
      */
-    public $stdClass;
+    public $std;
 
     /**
      * Create a new event instance.
      *
      * EventNotifyUserRecoverPassword constructor.
-     * @param stdClass $stdClass
+     * @param stdClass $std
      */
-    public function __construct(stdClass $stdClass)
+    public function __construct(stdClass $std)
     {
-        $this->stdClass = $stdClass;
+        $this->std = $std;
     }
 
 }
