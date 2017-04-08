@@ -48,7 +48,7 @@ class ResetPasswordController extends Controller
 
             if (!$this->repository->isTokenResetPassord($request)) {
 
-                $request->session()->flash('message_error_reset_password', Config('constants.TOKEN_INVALID_OR_NOT_FOUND'));
+                $request->session()->flash('message_error_reset_password', Config::get('constants.TOKEN_INVALID_OR_NOT_FOUND'));
 
             }
 

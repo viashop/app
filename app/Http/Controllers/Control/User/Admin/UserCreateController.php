@@ -64,9 +64,9 @@ class UserCreateController extends Controller
 
         try {
             $this->repository->createPost($request);
-            return redirect()->route('control.users.admin.read')->with('success', \Config('constants.MSG_USER_CREATE_SUCCESS'));
+            return redirect()->route('control.users.admin.read')->with('success', \Config::get('constants.MSG_USER_CREATE_SUCCESS'));
         } catch (\Exception $e) {
-            return redirect()->route('control.users.admin.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.users.admin.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }

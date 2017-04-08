@@ -72,7 +72,7 @@ class PermissionController extends Controller
          try {
 
              if ($this->existsPermission($request) > 0) {
-                 return redirect()->route('control.authorization.permission.read')->with('danger', \Config('constants.MSG_DATA_EQUALS_REGISTERED'));
+                 return redirect()->route('control.authorization.permission.read')->with('danger', \Config::get('constants.MSG_DATA_EQUALS_REGISTERED'));
              }
 
              $stdClass = new stdClass();
@@ -83,10 +83,10 @@ class PermissionController extends Controller
 
              event(new EventActivityRecordUserTypeAdded($stdClass));
 
-             return redirect()->route('control.authorization.permission.read.search', $request->input('description'))->with('success', \Config('constants.MSG_DATA_REGISTERED_SUCCESS'));
+             return redirect()->route('control.authorization.permission.read.search', $request->input('description'))->with('success', \Config::get('constants.MSG_DATA_REGISTERED_SUCCESS'));
 
          } catch (\Exception $e) {
-             return redirect()->route('control.authorization.permission.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+             return redirect()->route('control.authorization.permission.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
          }
 
      }
@@ -154,10 +154,10 @@ class PermissionController extends Controller
              $stdClass->new = $this->permission->findOrFail($request->input('permission_id'));
              event(new EventActivityRecordUserTypeChangead($stdClass));
 
-             return redirect()->route('control.authorization.permission.read')->with('success', \Config('constants.MSG_USER_UPDATE_SUCCESS'));
+             return redirect()->route('control.authorization.permission.read')->with('success', \Config::get('constants.MSG_USER_UPDATE_SUCCESS'));
 
          } catch (\Exception $e) {
-             return redirect()->route('control.authorization.permission.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+             return redirect()->route('control.authorization.permission.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
          }
 
      }
@@ -180,13 +180,13 @@ class PermissionController extends Controller
                  $this->permission->destroy($id);
                  event(new EventActivityRecordUserTypeRemoved($stdClass));
 
-                 return redirect()->back()->with('success', \Config('constants.MSG_DATA_REMOVED_SUCCESS'));
+                 return redirect()->back()->with('success', \Config::get('constants.MSG_DATA_REMOVED_SUCCESS'));
              }
 
-             return redirect()->back()->with('danger', \Config('constants.MSG_NOT_AUTHORIZED'));
+             return redirect()->back()->with('danger', \Config::get('constants.MSG_NOT_AUTHORIZED'));
 
          } catch (\Exception $e) {
-             return redirect()->back()->with('danger', \Config('constants.ERROR_PROCESS'));
+             return redirect()->back()->with('danger', \Config::get('constants.ERROR_PROCESS'));
          }
 
      }

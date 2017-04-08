@@ -54,10 +54,10 @@ class UserDeleteController extends Controller
 
             $this->user->destroy($id);
 
-            return redirect()->back()->with('success', \Config('constants.MSG_USER_REMOVE_SUCCESS'));
+            return redirect()->back()->with('success', \Config::get('constants.MSG_USER_REMOVE_SUCCESS'));
 
         } catch (Exception $e) {
-            return redirect()->back()->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->back()->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -80,11 +80,11 @@ class UserDeleteController extends Controller
                 $task->forceDelete();
             }
 
-            return redirect()->route('control.users.admin.read.trashed')->with('success', \Config('constants.MSG_USER_REMOVE_SUCCESS'));
+            return redirect()->route('control.users.admin.read.trashed')->with('success', \Config::get('constants.MSG_USER_REMOVE_SUCCESS'));
 
         } catch (Exception $e) {
 
-            return redirect()->route('control.users.admin.read.trashed')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.users.admin.read.trashed')->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }

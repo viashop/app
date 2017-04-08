@@ -94,10 +94,10 @@ class UserUpdateController extends Controller
         try {
 
             $this->repository->updatePost($request);
-            return redirect()->route('control.users.shops.admin.read')->with('success', \Config('constants.MSG_USER_UPDATE_SUCCESS'));
+            return redirect()->route('control.users.shops.admin.read')->with('success', \Config::get('constants.MSG_USER_UPDATE_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.users.shops.admin.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.users.shops.admin.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -114,10 +114,10 @@ class UserUpdateController extends Controller
         try {
 
             $this->repository->updatePost($request);
-            return redirect()->route('control.users.shops.editor.read')->with('success', \Config('constants.MSG_USER_UPDATE_SUCCESS'));
+            return redirect()->route('control.users.shops.editor.read')->with('success', \Config::get('constants.MSG_USER_UPDATE_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.users.shops.editor.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.users.shops.editor.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }

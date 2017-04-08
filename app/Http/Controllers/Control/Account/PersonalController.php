@@ -64,7 +64,7 @@ class PersonalController extends Controller
                 $this->isPasswordValid($request->input('password'));
 
                 if (!v::equals($request->input('password'))->validate($request->input('password_confirmation'))) {
-                    throw new \Exception(\Config('constants.MSG_PASSWORD_IS_NOT_IDENTICAL'));
+                    throw new \Exception(\Config::get('constants.MSG_PASSWORD_IS_NOT_IDENTICAL'));
                 }
 
                 $userdata = array(
@@ -73,7 +73,7 @@ class PersonalController extends Controller
                 );
 
                 if (!Auth::attempt($userdata)) {
-                    throw new \Exception(\Config('constants.MSG_PASSWORD_CURRENT_NOT_EQUALS'));
+                    throw new \Exception(\Config::get('constants.MSG_PASSWORD_CURRENT_NOT_EQUALS'));
                 }
 
                 $this->user->where('id', $id)->update([
@@ -81,13 +81,13 @@ class PersonalController extends Controller
                     'password' => bcrypt($request->input('password')),
                 ]);
 
-                return redirect()->back()->with('success', \Config('constants.MSG_DATA_UPDATE_SUCCESS'));
+                return redirect()->back()->with('success', \Config::get('constants.MSG_DATA_UPDATE_SUCCESS'));
 
             }
 
             $this->user->where('id', $id)->update(['name' => $request->input('name')]);
 
-            return redirect()->back()->with('success', \Config('constants.MSG_DATA_UPDATE_SUCCESS'));
+            return redirect()->back()->with('success', \Config::get('constants.MSG_DATA_UPDATE_SUCCESS'));
 
         } catch (\Exception $e) {
             return redirect()->back()->with('danger', $e->getMessage());

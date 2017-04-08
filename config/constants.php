@@ -3,9 +3,7 @@
 
 return [
 
-    'ERROR_PROCESS_OAUTH' => 'Houve um erro na operação. 
-    Por favor tente novamente!',
-
+    'ERROR_PROCESS_OAUTH' => 'Houve um erro na operação. Por favor tente novamente!',
     'OAUTH_NOT_CONNECTED' => 'Não há nenhuma conta vinculada a este aplicativo no momento.',
     'OAUTH_DENIED' => 'Nós precisamos de sua permissão para realizar a ação que nos pediu.',
     'ERROR_ROUTE' => '404 - Sorry, the page you are looking for could not be found.',
@@ -47,10 +45,7 @@ return [
     'MSG_NOT_AUTHORIZED'=> 'Erro 403.1 - Acesso de execução negado.',
     'MSG_PERMISSIONS_UPDATE_SUCCESS'=> 'Permissões administrativas canceladas com sucesso.',
     'PREPEND_INPUT_SELECT' => 'Selecione...',
-
-    'ERROR_PROCESS' => 'A OPERAÇÃO NÃO FOI CONCLUÍDA. 
-    Ocorreu um erro durante o processamento de sua solicitação. Por favor, tente novamente mais tarde.',
+    'ERROR_PROCESS' => 'Ocorreu um erro durante o processamento de sua solicitação. Por favor, tente novamente mais tarde.',
     'WITHOUT_AUTHORIZATION' => '403 - Proibido: Acesso negado. Você não tem permissão para exibir este diretório ou esta página usando as credenciais que você forneceu.',
-
 
 ];

@@ -82,13 +82,13 @@ class AuthorizationPermissionRoleController extends Controller
             $role = $this->role->findOrFail($role_id);
 
             if ( $role->permissions()->detach($permission_id) ) {
-                return redirect()->back()->with('info', \Config('constants.MSG_DATA_PERMISSION_REVOKE_SUCCESS'));
+                return redirect()->back()->with('info', \Config::get('constants.MSG_DATA_PERMISSION_REVOKE_SUCCESS'));
             }
 
             throw new \Exception();
 
         } catch (\Exception $e) {
-            return redirect()->back()->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->back()->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -116,13 +116,13 @@ class AuthorizationPermissionRoleController extends Controller
             array_push($array_ids, intval($request->permission_id));
 
             if ( $role->permissions()->sync($array_ids) ) {
-                return redirect()->back()->with('success', \Config('constants.MSG_DATA_PERMISSION_ACTIVE_SUCCESS'));
+                return redirect()->back()->with('success', \Config::get('constants.MSG_DATA_PERMISSION_ACTIVE_SUCCESS'));
             }
 
             throw new \Exception();
 
         } catch (\Exception $e) {
-            return redirect()->back()->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->back()->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -140,7 +140,7 @@ class AuthorizationPermissionRoleController extends Controller
        try {
 
            if ($id <= 6) {
-               throw new \Exception(\Config('constants.MSG_NOT_AUTHORIZED'));
+               throw new \Exception(\Config::get('constants.MSG_NOT_AUTHORIZED'));
            }
 
            $role = (array)$this->role->where('name', 'shop_customer')->first()->id;
@@ -152,7 +152,7 @@ class AuthorizationPermissionRoleController extends Controller
 
            $make = $this->user->findOrFail($id);
            $make->roles()->sync($role);
-           return redirect()->route('control.users.admin.read')->with('success', \Config('constants.MSG_PERMISSIONS_UPDATE_SUCCESS'));
+           return redirect()->route('control.users.admin.read')->with('success', \Config::get('constants.MSG_PERMISSIONS_UPDATE_SUCCESS'));
 
        } catch (\Exception $e) {
            return redirect()->back()->with('danger', $e->getMessage());

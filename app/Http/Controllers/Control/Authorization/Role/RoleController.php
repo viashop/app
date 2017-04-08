@@ -82,10 +82,10 @@ class RoleController extends Controller
 
             $this->service->create($request);
 
-            return redirect()->route('control.authorization.role.read.search', $request->input('description'))->with('success', Config('constants.MSG_DATA_REGISTERED_SUCCESS'));
+            return redirect()->route('control.authorization.role.read.search', $request->input('description'))->with('success', Config::get('constants.MSG_DATA_REGISTERED_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.authorization.role.read')->with('danger', Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.authorization.role.read')->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -97,12 +97,12 @@ class RoleController extends Controller
      */
     public function update($id)
     {
+
         $this->checkPermission('edit_administrator');
         SEOMeta::setTitle('Editar Função');
-
         $role = $this->repository->findOrFail($id);
-
         return view('control.authorization.role.update', compact('role'));
+
     }
 
     /**
@@ -117,10 +117,10 @@ class RoleController extends Controller
         try {
 
             $this->service->update($request);
-            return redirect()->route('control.authorization.role.read')->with('success', Config('constants.MSG_USER_UPDATE_SUCCESS'));
+            return redirect()->route('control.authorization.role.read')->with('success', Config::get('constants.MSG_USER_UPDATE_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.authorization.role.read')->with('danger', Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.authorization.role.read')->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -132,13 +132,15 @@ class RoleController extends Controller
     public function delete($id)
     {
 
+
         $this->checkPermission('delete_administrator');
         try {
             $this->service->delete($id);
         } catch (\Exception $e) {
-            return redirect()->back()->with('danger', Config('constants.ERROR_PROCESS'));
+            return redirect()->back()->with('danger', Config::get('constants.ERROR_PROCESS'));
         }
-        return redirect()->back()->with('success', Config('constants.MSG_DATA_REMOVED_SUCCESS'));
+
+        return redirect()->back()->with('success', Config::get('constants.MSG_DATA_REMOVED_SUCCESS'));
 
     }
 

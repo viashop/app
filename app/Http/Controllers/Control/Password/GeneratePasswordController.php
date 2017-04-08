@@ -40,10 +40,10 @@ class GeneratePasswordController extends Controller
         try {
 
             $this->generateNewPassword($id);
-            return redirect()->back()->with('success', \Config('constants.MSG_USER_NEW_PASSWORD_SUCCESS'));
+            return redirect()->back()->with('success', \Config::get('constants.MSG_USER_NEW_PASSWORD_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->back()->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->back()->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -59,10 +59,10 @@ class GeneratePasswordController extends Controller
         try {
 
             $this->generateNewPassword($id);
-            return redirect()->route('control.users.shops.admin.read')->with('success', \Config('constants.MSG_USER_NEW_PASSWORD_SUCCESS'));
+            return redirect()->route('control.users.shops.admin.read')->with('success', \Config::get('constants.MSG_USER_NEW_PASSWORD_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.users.shops.admin.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.users.shops.admin.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
@@ -77,10 +77,10 @@ class GeneratePasswordController extends Controller
         try {
 
             $this->generateNewPassword($id);
-            return redirect()->route('control.users.shops.editor.read')->with('success', \Config('constants.MSG_USER_NEW_PASSWORD_SUCCESS'));
+            return redirect()->route('control.users.shops.editor.read')->with('success', \Config::get('constants.MSG_USER_NEW_PASSWORD_SUCCESS'));
 
         } catch (\Exception $e) {
-            return redirect()->route('control.users.shops.editor.read')->with('danger', \Config('constants.ERROR_PROCESS'));
+            return redirect()->route('control.users.shops.editor.read')->with('danger', \Config::get('constants.ERROR_PROCESS'));
         }
 
     }
